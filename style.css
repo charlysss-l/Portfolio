@@ -1,0 +1,307 @@
+* {
+    background-color: rgb(0, 45, 98);
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  
+  /* Header Section */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .name {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(5, 238, 255);
+  }
+  
+  .navbar {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navLink {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: rgba(5, 238, 255, 0.3);
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navLink:hover {
+    background-color: rgba(5, 238, 255, 0.5);
+  }
+  
+  /* Home Section */
+  .home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 10%;
+    text-align: left;
+  }
+  
+  .position {
+    font-size: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(5, 238, 255);
+  }
+  
+  .aboutMe {
+    width: 80%;
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 20px 0;
+  }
+  
+  strong {
+    color: rgb(5, 238, 255);
+  }
+  
+  .homeButton {
+    display: inline-block;
+    border: 2px solid rgb(5, 238, 255);
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: rgb(5, 238, 255);
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .homeButton:hover {
+    background-color: rgba(5, 238, 255, 0.3);
+    color: white;
+  }
+
+/* Background Section */
+.background {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(0, 0, 0); 
+}
+
+.college, .shs, .intern {
+    margin: 10px;
+    border-radius: 8px; 
+    width: 50%; 
+    background-color: rgb(1 63 110);
+    border: 1px solid rgb(5, 238, 255);
+}
+.college:hover, .shs:hover, .intern:hover{
+    z-index: 1;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(5, 238, 255, 0.7); 
+} 
+
+.program, .sch, .company, .gpa, .bgTitle {
+    padding: 5px;
+    background-color:rgb(1 63 110);
+}
+.bgTitle{
+    font-size: 20px;
+    color: rgb(5, 238, 255);
+    font-weight: 300;
+}
+.program {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.sch, .company, .gpa {
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+
+
+/* Skills Section */
+.skills {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0% 10%;
+    text-align: left;
+  }
+  
+  .skillHeader {
+    color: rgb(5, 238, 255);
+    margin-bottom: 20px;
+    font-size:70px ;
+  }
+  
+  .skillSet {
+    border: 1px solid rgba(153, 248, 254, 0.5);
+    padding: 10px;
+    margin: 10px 0;
+  }
+  .skillEnd{
+    color: rgb(5, 238, 255);
+  }
+  .skillTitle {
+    display: flex; 
+    flex-wrap: wrap; 
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skillType {
+    text-decoration: none;
+    margin-right: 20px; 
+    font-size: 16px;
+  }
+  
+/* Projects Section */
+.projects {
+    padding: 5% 10%;
+    text-align: left;
+    color: white;
+}
+
+.projects h1 {
+    color: rgb(5, 238, 255);
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.projects ul {
+    list-style: none;
+    padding: 0;
+}
+
+.projects li {
+    padding: 20px;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 1px solid rgba(5, 238, 255, 0.3);
+}
+
+.projects li h2 {
+    color: rgb(5, 238, 255);
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.projects .technologies {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.projects .technologies span {
+    background-color: rgba(5, 238, 255, 0.3);
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.projects li p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.projects a {
+    color: rgb(5, 238, 255);
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: rgba(5, 238, 255, 0.3);
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    width: 20%;
+    text-align: center;
+}
+
+.projects a:hover {
+    background-color: rgba(5, 238, 255, 0.5);
+    color: white;
+}
+
+/* Contact Section */
+.contact {
+    height: 50vh;
+    padding: 5% 10%;
+    text-align: center;
+    color: white;
+}
+
+.contact h2 {
+    font-size: 36px;
+    color: rgb(5, 238, 255);
+    margin-bottom: 15px;
+}
+
+
+.contact p {
+
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+.contact h4 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+
+.contact a {
+    color: rgb(5, 238, 255);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+
+.contact a:hover {
+    color: rgba(5, 238, 255, 0.8);
+}
+
+/* Footer Section */
+.footer {
+    padding: 20px 10%;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    border-top: 2px solid rgba(5, 238, 255, 0.5);
+}
+
+.footer h4 {
+    font-size: 18px;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer a {
+    color: rgb(5, 238, 255);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: rgba(5, 238, 255, 0.8);
+}
