@@ -217,7 +217,7 @@
   
 /* Projects Section */
 .projects {
-  padding: 5% 10%;
+  padding: 5% 5%;
   text-align: left;
   color: white;
 }
@@ -225,7 +225,6 @@
 .projects h1 {
   color: white;
   font-size: 36px;
-  margin-bottom: 40px;
   text-align: center;
 }
 
@@ -238,7 +237,7 @@
 
 .project {
   background-color: #1e1e1e;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   width: 500px;
   box-shadow: 0 4px 10px rgba(5, 238, 255, 0.2);
@@ -270,9 +269,12 @@
   background-color: #1e1e1e;
   font-size: 14px;
   color: rgb(255, 255, 255);
-  margin: 5px 0;
+  margin:5px 0px;
+ 
 }
-
+.position{
+ margin-bottom: 20px;
+}
 .description {
   background-color: #1e1e1e;
   font-size: 16px;
@@ -299,16 +301,17 @@
 }
 
 /* Links Styling */
-.gitRepo{
-  background-color: #1e1e1e;
-  display: flex;
-
-}
 .links{
   display: flex;
   background-color: #1e1e1e;
   justify-content: space-around;
+  align-items:s
 }
+.gitRepo{
+  background-color: #1e1e1e;
+  display: flex;
+}
+
 .links img{
   background-color: #1e1e1e;
   width: 30px;
