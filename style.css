@@ -307,6 +307,7 @@
 .links{
   display: flex;
   gap: 50%;
+  margin-bottom: 20px;
 }
 .gitRepo{
   display: flex;
