@@ -95,7 +95,7 @@
 
 /* Background Section */
 .background {
-  min-height: 100vh;
+  min-height: 70vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -105,10 +105,10 @@
   text-align: center;
 }
 
-.college, .shs, .intern {
-  flex: 1 1 30%;
+.college, .shs, .intern, .bootcamp {
+  flex: 1 1 40%;
   max-width: 1000px;
-  max-height: 1400px;
+  height: 200px;
   box-shadow: 0px 2px rgba(255, 255, 255, 0.252);
   border-radius: 10px;
   padding: 25px;
@@ -116,13 +116,13 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.college:hover, .shs:hover, .intern:hover {
+.college:hover, .shs:hover, .intern:hover , .bootcamp:hover{
   transform: translateY(-10px);
   box-shadow: 0 10px 25px rgba(0, 183, 255, 0.3);
 }
 
 .bgTitle {
-  font-size: 22px;
+  font-size: 20px;
   color: white;
   font-weight: bold;
   margin-bottom: 15px;
@@ -336,43 +336,92 @@
 
 /* Contact Section */
 .contact {
-
-    text-align: center;
-    color: white;
+  padding: 5% 5%;
+  color: white;
+  background-color: #1e1e1e;
 }
 
 .contact h2 {
-    font-size: 36px;
-    color: white;
-    margin-bottom: 15px;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.contact-description {
+  flex: 1;
+  text-align: left;
+  max-width: 500px;
+}
+
+.contact-description h4 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.contact-description a {
+  color: #00b7ff;
+  text-decoration: none;
+}
+
+.contact-description a:hover {
+  color: #00d8ff;
+}
+
+/* Contact Section */
+.contact {
+  padding: 40px;
+  color: white;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 50px auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: transparent;
+}
+
+.contact h2 {
+  font-size: 36px;
+  color: rgba(5, 238, 255, 0.5);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
 
 .contact p {
-
-    font-size: 18px;
-    margin-bottom: 20px;
-    color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
 }
-
 
 .contact h4 {
-    font-size: 20px;
-    margin: 10px 0;
+  font-size: 18px;
+  color: #f1f1f1;
+  margin-bottom: 15px;
+  font-weight: 400;
 }
-
 
 .contact a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+  color:rgba(5, 238, 255, 0.5);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
-
 
 .contact a:hover {
-    color: rgba(5, 238, 255, 0.8);
+  color: #00d8ff;
 }
+
+
 
 /* Footer Section */
 .footer {
@@ -380,16 +429,17 @@
     text-align: center;
     color: white;
     margin-top: 30px;
-    border-top: 2px solid rgba(5, 238, 255, 0.5);
+    border-top: 0.5px solid rgba(5, 238, 255, 0.099);
 }
 
 .footer h4 {
-    font-size: 18px;
+    font-size: 12px;
     font-weight: normal;
     color: rgba(255, 255, 255, 0.8);
 }
 
 .footer a {
+  font-size: 14px;
     color: white;
     text-decoration: none;
     font-weight: bold;
