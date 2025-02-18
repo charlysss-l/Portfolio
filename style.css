@@ -236,7 +236,7 @@
 }
 
 .project {
-  background-color: #1e1e1e;
+ 
   padding: 10px;
   border-radius: 10px;
   width: 500px;
@@ -250,7 +250,7 @@
 }
 
 .project-image {
-  background-color: #1e1e1e;
+ 
   width: 100%;
   height: auto;
   border-radius: 5px;
@@ -258,15 +258,20 @@
 }
 
 .project-name {
-  background-color: #1e1e1e;
+ 
   color: white;
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
 }
-
+.devInfo{
+  display: flex;
+  gap: 20px;
+}
+.devInfo span{
+  color: rgba(5, 238, 255, 0.738);
+}
 .date-developed, .position {
-  background-color: #1e1e1e;
   font-size: 14px;
   color: rgb(255, 255, 255);
   margin:5px 0px;
@@ -276,20 +281,18 @@
  margin-bottom: 20px;
 }
 .description {
-  background-color: #1e1e1e;
+  
   font-size: 16px;
   color: rgb(255, 255, 255);
-  margin-bottom: 80px;
   width: 100%;
   text-align: justify;
 }
 
 .tech-stack {
-  background-color: #1e1e1e;
   font-size: 14px;
   color: rgb(255, 255, 255);
-  margin-top: 15px;
-  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 .tech-stack span {
@@ -303,26 +306,20 @@
 /* Links Styling */
 .links{
   display: flex;
-  background-color: #1e1e1e;
-  justify-content: space-around;
-  align-items:s
+  gap: 50%;
 }
 .gitRepo{
-  background-color: #1e1e1e;
   display: flex;
 }
 
 .links img{
-  background-color: #1e1e1e;
   width: 30px;
   height: 20px;
   padding-right: 10px;
 }
 .project a {
-  background-color: #1e1e1e;
   display: flex;
   flex-direction: column;
-  color: white;
   text-decoration: none;
   font-size: 14px;
   transition: color 0.3s ease;
@@ -332,6 +329,9 @@
   color: white;
 }
 
+.project-link{
+  color:  rgba(5, 238, 255, 0.738);
+}
 
 /* Contact Section */
 .contact {
