@@ -13,34 +13,29 @@
   /* Header Section */
   .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 20px 5%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   }
   
-  .name {
-    font-size: 30px;
-    font-weight: bold;
-    color: white;
-  }
+
   
   .navbar {
     display: flex;
-    gap: 20px;
+    gap: 5px;
   }
   
   .navLink {
     color: white;
     text-decoration: none;
     padding: 8px 16px;
-    background-color: rgba(5, 238, 255, 0.3);
     border-radius: 8px;
-    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
   }
   
   .navLink:hover {
-    background-color: rgba(5, 238, 255, 0.5);
+    color: rgba(5, 238, 255, 0.5);
   }
   
 /* Home Section */
