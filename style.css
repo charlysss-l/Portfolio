@@ -137,7 +137,7 @@
 
 /* Background Section */
 .background {
-  min-height: 70vh;
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -200,7 +200,7 @@
   flex-direction: column;
   justify-content: center;
   padding: 5% 10%;
-  
+  height: 100vh;
 }
 
 .skillHeader {
@@ -222,7 +222,7 @@
 
 .skillEnd {
   color: white;
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
@@ -238,12 +238,12 @@
   display: flex;
   align-items: center;
   width: 200px;
-  margin: 10px;
+  margin: 2px;
 }
 
 .skillType img.tech-img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin-right: 10px;
 }
 
@@ -274,12 +274,12 @@
 .project-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 50px;
   justify-content: center;
+  margin-bottom: 10px;
 }
 
 .project {
- 
   padding: 10px;
   border-radius: 10px;
   width: 500px;
@@ -293,19 +293,17 @@
 }
 
 .project-image {
- 
-  width: 100%;
+ align-items: center;
+ justify-content: center;
+  width: 90%;
   height: auto;
   border-radius: 5px;
-  margin-bottom: 15px;
 }
 
-.project-name {
- 
+.project-name { 
   color: white;
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 10px;
 }
 .devInfo{
   display: flex;
@@ -317,14 +315,11 @@
 .date-developed, .position {
   font-size: 14px;
   color: rgb(255, 255, 255);
-  margin:5px 0px;
- 
 }
 .position{
- margin-bottom: 20px;
+ margin-bottom: 5px;
 }
 .description {
-  
   font-size: 16px;
   color: rgb(255, 255, 255);
   width: 100%;
@@ -334,8 +329,8 @@
 .tech-stack {
   font-size: 14px;
   color: rgb(255, 255, 255);
-  margin-top: 30px;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   overflow-y: hidden;
 }
 
@@ -381,7 +376,6 @@
 
 /* Contact Section */
 .contact {
-  padding: 5% 5%;
   color: white;
   background-color: #1e1e1e;
 }
