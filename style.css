@@ -1,67 +1,65 @@
 * {
-    background-color: rgb(0, 0, 0);
-    color: white;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    font-size: 16px;
-    overflow-x: hidden;
-   
+  background-color: rgb(0, 0, 0);
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  overflow-x: hidden;
 }
 
-  
-  /* Header Section */
-  .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    padding: 20px 5%;
-    position: fixed;
-    background-color: rgb(0, 0, 0);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    z-index: 1;
-  }
-  
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 20px 5%;
+  position: fixed;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
 
-  .navbar {
-    display: flex;
-    gap: 5px;
-  }
-  
-  .navLink {
-    color: white;
-    text-decoration: none;
-    padding: 8px 16px;
-    border-radius: 8px;
-    transition: color 0.3s ease;
-  }
-  
-  .navLink:hover {
-    color: rgb(221, 103, 123);
-  }
-  
+.navbar {
+  display: flex;
+  gap: 5px;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: rgb(221, 103, 123);
+}
+
 /* Home Section */
 .home {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   padding: 0 10%;
   text-align: left;
 }
 
-.name{
+.name {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   text-align: center;
 }
-.myName { 
+
+.myName {
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 10px;
   text-transform: uppercase;
@@ -70,7 +68,7 @@
   overflow-y: hidden;
 }
 
-.span1, .span2{
+.span1, .span2 {
   font-size: 150px;
   display: inline-block;
   transition: transform 0.3s ease;
@@ -78,27 +76,26 @@
   text-shadow: 10px 10px rgba(221, 103, 123, 0.527);
 }
 
-.span1:hover  {
+.span1:hover {
   transform: rotate(30deg);
 }
 
-.span2:hover  {
+.span2:hover {
   transform: rotate(-15deg);
 }
 
-
-.personalInfo{
+.personalInfo {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-
 }
 
-.personalInfo p{
+.personalInfo p {
   color: white;
 }
+
 .home-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -137,29 +134,34 @@
 
 /* Background Section */
 .background {
-  height: 100vh;
   display: flex;
+  padding: 5% 5%;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 20px;
   padding: 40px 10%;
   text-align: center;
+  overflow-y: hidden;
+}
+
+.backgroundTitle {
+  font-size: 50px;
+  width: 400px;
 }
 
 .college, .shs, .intern, .bootcamp {
-  flex: 1 1 40%;
   max-width: 1000px;
-  height: 200px;
+  max-height: 100%;
   box-shadow: 0px 2px rgba(255, 255, 255, 0.252);
   border-radius: 10px;
-  padding: 25px;
+  padding: 30px;
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow-y: hidden;
 }
 
-.college:hover, .shs:hover, .intern:hover , .bootcamp:hover{
+.college:hover, .shs:hover, .intern:hover, .bootcamp:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 25px rgba(221, 103, 123, 0.527);
 }
@@ -188,7 +190,7 @@
   border-top: 1px solid rgba(221, 103, 123, 0.527);
 }
 
-.gpa{
+.gpa {
   font-size: 13px;
   color: rgb(255, 255, 255);
   margin: 5px 0;
@@ -199,8 +201,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5% 10%;
-  height: 100vh;
 }
 
 .skillHeader {
@@ -211,11 +211,10 @@
 }
 
 .skillSet {
-  box-shadow: 1px 1px 1px  1px rgba(221, 103, 123, 0.527);
+  box-shadow: 1px 1px 1px 1px rgba(221, 103, 123, 0.527);
   padding: 20px;
   margin: 10px;
   display: flex;
-  flex: 1;
   max-width: 100%;
   flex-direction: column;
 }
@@ -257,7 +256,6 @@
   gap: 2rem;
 }
 
-  
 /* Projects Section */
 .projects {
   padding: 5% 5%;
@@ -293,32 +291,37 @@
 }
 
 .project-image {
- align-items: center;
- justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 90%;
   height: auto;
   border-radius: 5px;
 }
 
-.project-name { 
+.project-name {
   color: white;
   font-size: 24px;
   font-weight: bold;
 }
-.devInfo{
+
+.devInfo {
   display: flex;
   gap: 20px;
 }
-.devInfo span{
+
+.devInfo span {
   color: rgb(221, 103, 123);
 }
+
 .date-developed, .position {
   font-size: 14px;
   color: rgb(255, 255, 255);
 }
-.position{
- margin-bottom: 5px;
+
+.position {
+  margin-bottom: 5px;
 }
+
 .description {
   font-size: 16px;
   color: rgb(255, 255, 255);
@@ -340,24 +343,25 @@
   border-radius: 10px;
   font-size: 14px;
   margin-right: 5px;
-  
 }
 
 /* Links Styling */
-.links{
+.links {
   display: flex;
   gap: 50%;
   margin-bottom: 20px;
 }
-.gitRepo{
+
+.gitRepo {
   display: flex;
 }
 
-.links img{
+.links img {
   width: 30px;
   height: 20px;
   padding-right: 10px;
 }
+
 .project a {
   display: flex;
   flex-direction: column;
@@ -370,8 +374,8 @@
   color: white;
 }
 
-.project-link{
-  color:  rgb(221, 103, 123);
+.project-link {
+  color: rgb(221, 103, 123);
 }
 
 /* Contact Section */
@@ -450,7 +454,7 @@
 }
 
 .contact a {
-  color:rgba(221, 103, 123, 0.527);
+  color: rgba(221, 103, 123, 0.527);
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
@@ -460,31 +464,111 @@
   color: rgb(221, 103, 123);
 }
 
-
-
 /* Footer Section */
 .footer {
-    padding: 20px 10%;
-    text-align: center;
-    color: white;
-    margin-top: 30px;
-    border-top: 0.5px solid rgba(221, 103, 123, 0.527);
+  padding: 20px 10%;
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+  border-top: 0.5px solid rgba(221, 103, 123, 0.527);
 }
 
 .footer h4 {
-    font-size: 12px;
-    font-weight: normal;
-    color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .footer a {
   font-size: 14px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .footer a:hover {
-    color: rgba(221, 103, 123, 0.527);
+  color: rgba(221, 103, 123, 0.527);
+}
+
+/* Responsiveness*/
+@media (min-width: 1200px) {
+  .home {
+      padding: 0 15%;
+  }
+
+  .background {
+      padding: 5% 15%;
+  }
+
+  .project {
+      width: 600px;
+  }
+
+  .skills {
+      grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .home {
+      padding: 0 5%;
+  }
+
+  .name .span1, .name .span2 {
+      font-size: 120px;
+  }
+
+  .background {
+      padding: 20px 5%;
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .background .college, .background .shs, .background .intern, .background .bootcamp {
+      flex: 1 1 100%;
+  }
+
+  .skills {
+      flex-direction: column;
+  }
+
+  .project-container {
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .project {
+      width: 100%;
+  }
+
+  .footer {
+      padding: 20px 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .name .span1, .name .span2 {
+      font-size: 100px;
+  }
+
+  .home-buttons {
+      flex-direction: column;
+      gap: 5px;
+  }
+
+  .project {
+      width: 100%;
+      padding: 15px;
+  }
+
+  .contact-description {
+      flex: 1;
+      max-width: 100%;
+      text-align: center;
+  }
+
+  .footer {
+      padding: 20px 5%;
+  }
 }
