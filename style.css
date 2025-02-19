@@ -516,13 +516,14 @@
   }
 
   .name .span1, .name .span2 {
-      font-size: 120px;
+    font-size: 40px;
   }
 
   .background {
       padding: 20px 5%;
       flex-direction: column;
       gap: 20px;
+      
   }
 
   .background .college, .background .shs, .background .intern, .background .bootcamp {
@@ -549,7 +550,7 @@
 
 @media (max-width: 480px) {
   .name .span1, .name .span2 {
-      font-size: 100px;
+      font-size: 40px;
   }
 
   .home-buttons {
