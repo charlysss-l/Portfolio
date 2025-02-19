@@ -7,6 +7,8 @@
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     font-size: 16px;
+    overflow-x: hidden;
+   
 }
 
   
@@ -39,7 +41,7 @@
   }
   
   .navLink:hover {
-    color: rgba(5, 238, 255, 0.5);
+    color: rgb(221, 103, 123);
   }
   
 /* Home Section */
@@ -53,16 +55,50 @@
   text-align: left;
 }
 
-.portfolio {
-  font-size: 150px;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  color: white;
+.name{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+}
+.myName { 
+  font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 10px;
   text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  overflow-y: hidden;
+}
 
+.span1, .span2{
+  font-size: 150px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  background: transparent;
+  text-shadow: 10px 10px rgba(221, 103, 123, 0.527);
+}
+
+.span1:hover  {
+  transform: rotate(30deg);
+}
+
+.span2:hover  {
+  transform: rotate(-15deg);
 }
 
 
+.personalInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.personalInfo p{
+  color: white;
+}
 .home-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -73,18 +109,19 @@
 .homeButton {
   display: inline-flex;
   align-items: center;
-  border: 2px solid white;
+  border: 2px solid rgba(221, 103, 123, 0.527);
   padding: 10px 20px;
   border-radius: 8px;
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: bold;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .homeButton:hover {
-  background-color: rgba(5, 238, 255, 0.3);
-  color: white;
+  background-color: rgba(0, 0, 0, 0.527);
+  color: rgb(255, 255, 255);
+  border: 2px solid white;
 }
 
 .icon {
@@ -119,11 +156,12 @@
   padding: 25px;
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow-y: hidden;
 }
 
 .college:hover, .shs:hover, .intern:hover , .bootcamp:hover{
   transform: translateY(-10px);
-  box-shadow: 0 10px 25px rgba(0, 183, 255, 0.3);
+  box-shadow: 0 10px 25px rgba(221, 103, 123, 0.527);
 }
 
 .bgTitle {
@@ -131,7 +169,7 @@
   color: white;
   font-weight: bold;
   margin-bottom: 15px;
-  border-bottom: 2px solid rgba(5, 238, 255, 0.5);
+  border-bottom: 2px solid rgba(221, 103, 123, 0.527);
   display: inline-block;
   padding-bottom: 5px;
 }
@@ -147,7 +185,7 @@
   font-size: 13px;
   color: rgb(255, 255, 255);
   margin: 5px 0;
-  border-top: 1px solid rgba(5, 238, 255, 0.153);
+  border-top: 1px solid rgba(221, 103, 123, 0.527);
 }
 
 .gpa{
@@ -173,7 +211,7 @@
 }
 
 .skillSet {
-  box-shadow: 1px 1px 1px  1px rgba(153, 248, 254, 0.5);
+  box-shadow: 1px 1px 1px  1px rgba(221, 103, 123, 0.527);
   padding: 20px;
   margin: 10px;
   display: flex;
@@ -245,13 +283,13 @@
   padding: 10px;
   border-radius: 10px;
   width: 500px;
-  box-shadow: 0 4px 10px rgba(5, 238, 255, 0.2);
+  box-shadow: 0 4px 10px rgba(221, 103, 123, 0.527);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 25px rgba(0, 183, 255, 0.3);
+  box-shadow: 0 10px 25px rgba(221, 103, 123, 0.527);
 }
 
 .project-image {
@@ -274,7 +312,7 @@
   gap: 20px;
 }
 .devInfo span{
-  color: rgba(5, 238, 255, 0.738);
+  color: rgb(221, 103, 123);
 }
 .date-developed, .position {
   font-size: 14px;
@@ -298,14 +336,16 @@
   color: rgb(255, 255, 255);
   margin-top: 30px;
   margin-bottom: 50px;
+  overflow-y: hidden;
 }
 
 .tech-stack span {
-  background-color: rgba(5, 238, 255, 0.3);
+  background-color: rgb(221, 103, 123);
   padding: 6px 12px;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 14px;
   margin-right: 5px;
+  
 }
 
 /* Links Styling */
@@ -336,7 +376,7 @@
 }
 
 .project-link{
-  color:  rgba(5, 238, 255, 0.738);
+  color:  rgb(221, 103, 123);
 }
 
 /* Contact Section */
@@ -393,7 +433,7 @@
 
 .contact h2 {
   font-size: 36px;
-  color: rgba(5, 238, 255, 0.5);
+  color: rgb(221, 103, 123);
   margin-bottom: 20px;
   font-weight: 600;
 }
@@ -416,14 +456,14 @@
 }
 
 .contact a {
-  color:rgba(5, 238, 255, 0.5);
+  color:rgba(221, 103, 123, 0.527);
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .contact a:hover {
-  color: #00d8ff;
+  color: rgb(221, 103, 123);
 }
 
 
@@ -434,7 +474,7 @@
     text-align: center;
     color: white;
     margin-top: 30px;
-    border-top: 0.5px solid rgba(5, 238, 255, 0.099);
+    border-top: 0.5px solid rgba(221, 103, 123, 0.527);
 }
 
 .footer h4 {
@@ -452,5 +492,5 @@
 }
 
 .footer a:hover {
-    color: rgba(5, 238, 255, 0.8);
+    color: rgba(221, 103, 123, 0.527);
 }
