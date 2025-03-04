@@ -332,44 +332,84 @@
 .skills {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  height: 80vh;
 }
-
-.skillHeader {
-  color: white;
-  margin-bottom: 20px;
-  font-size: 50px;
-  text-align: center;
-}
-
-.skillSet {
-  box-shadow: 1px 1px 1px 1px #F3B838;
-  padding: 20px;
-  margin: 10px;
+.AllSkills{
   display: flex;
-  max-width: 100%;
-  flex-direction: column;
+  padding: 30px;
+  justify-content: center;
+  
+}
+.skillSetFront {
+  box-shadow: 1px 1px 1px 1px #FFB902;
+  width: 250px;
+  margin: 10px;
+  padding: 20px;
+}
+.skillSetFront:hover{
+  transform:  scaleY(1.1);
+  box-shadow: 1px 1px 1px 1px #FFB902;
+}
+
+.skillSetBackend {
+  box-shadow: 1px 1px 1px 1px #4C5660;
+  width: 250px;
+  margin: 10px;
+  padding: 20px;
+}
+.skillSetBackend:hover{
+  transform:  scaleY(1.1);
+  box-shadow: 1px 1px 1px 1px #4C5660;
+}
+
+.skillSetDatabase {
+  box-shadow: 1px 1px 1px 1px #94FCF6;
+  width: 250px;
+  margin: 10px;
+  padding: 20px;
+}
+.skillSetDatabase:hover{
+  transform:  scaleY(1.1);
+  box-shadow: 1px 1px 1px 1px #94FCF6;
+}
+.skillSetWebDesign {
+  box-shadow: 1px 1px 1px 1px #7A9490;
+  width: 250px;
+  margin: 10px;
+  padding: 20px;
+}
+.skillSetWebDesign:hover{
+  transform:  scaleY(1.1);
+  box-shadow: 1px 1px 1px 1px #7A9490;
+}
+
+.skillSetTools {
+  box-shadow: 1px 1px 1px 1px #958E4C;
+  width: 250px;
+  margin: 10px;
+  padding: 20px;
+}
+.skillSetTools:hover{
+  transform:  scaleY(1.1);
+  box-shadow: 1px 1px 1px 1px #958E4C;
 }
 
 .skillEnd {
   color: white;
   font-size: 20px;
   margin-bottom: 10px;
+  font-family: "Big Shoulders Display", system-ui;
+  letter-spacing: 2px;
 }
 
-.skillTitle {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
 
 .skillType {
   display: flex;
   align-items: center;
   width: 200px;
   margin: 2px;
+  font-size: 23px;
+  font-family: "Big Shoulders Display", system-ui;
 }
 
 .skillType img.tech-img {
@@ -382,11 +422,7 @@
   font-size: 16px;
 }
 
-.skills {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
+
 
 /* Projects Section */
 .projects {
