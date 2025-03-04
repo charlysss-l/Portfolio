@@ -172,65 +172,160 @@
   padding: 30px;
 }
 
-/* Background Section */
-.background {
+/*Background*/
+.background{
+  height: 100vh;
+  margin-top: 100px;
+}
+.SectionTitle{
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.SectionTitle h2{
+  font-family: "Bangers", system-ui;
+  padding: 15px;
+  font-size: 55px;
+  letter-spacing: 5px;
+}
+.SectionTitle p{
+  font-family: "Big Shoulders Display", system-ui;
+  padding-right: 20px;
+  font-size: 25px;
+  text-align: right;
+}
+.bgAll{
+  display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 20px;
-  text-align: center;
-  overflow-y: hidden;
 }
-
-.backgroundTitle {
+.college .bgTitle{
+  font-family: "Bangers", system-ui;
   font-size: 50px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.college .bgBox{
+  background-color:#D9D9D9;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
 }
-
-.college, .shs, .intern, .bootcamp {
-  width: 100%;
-  box-shadow: 0px 2px rgba(255, 255, 255, 0.252);
-  border-radius: 10px;
-  padding: 30px;
-  text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow-y: hidden;
+.college .program, .college .sch , .college .gpa {
+  background:#D9D9D9;
+  color: black;
+  font-family: "Big Shoulders Display", system-ui;
+  text-transform: uppercase;
+  font-size: 25px;
+  padding: 0px 10px;
+  font-weight: 100;
 }
-
-.college:hover, .shs:hover, .intern:hover, .bootcamp:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 25px rgba(221, 103, 123, 0.527);
+.college .program{
+  font-size: 45px;
+  font-weight: 300;
+  line-height: 1.3;
 }
-
-.bgTitle {
-  font-size: 20px;
-  color: white;
-  font-weight: bold;
-  margin-bottom: 15px;
-  border-bottom: 2px solid rgba(221, 103, 123, 0.527);
-  display: inline-block;
-  padding-bottom: 5px;
+.college .bgBottom{
+  margin-top: 20px;
 }
-
-.program {
-  font-size: 18px;
-  font-weight: 600;
+/*SHS*/
+.shs .bgTitle{
+  font-family: "Bangers", system-ui;
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.shs .bgBox{
+  background: #3E4749;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.shs .program, .shs .sch , .shs .gpa {
+  background: #3E4749;
   color: rgb(255, 255, 255);
-  margin-top: 10px;
+  font-family: "Big Shoulders Display", system-ui;
+  text-transform: uppercase;
+  font-size: 25px;
+  padding: 0px 10px;
+  font-weight: 100;
+}
+.shs .program{
+  font-size: 45px;
+  font-weight: 300;
+  line-height: 1.3;
+}
+.shs .bgBottom{
+  margin-top: 20px;
 }
 
-.sch, .company {
-  font-size: 13px;
-  color: rgb(255, 255, 255);
-  margin: 5px 0;
-  border-top: 1px solid rgba(221, 103, 123, 0.527);
+/*intern*/
+.intern .bgTitle{
+  font-family: "Bangers", system-ui;
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.intern .bgBox{
+  background: #F3B838;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.intern .program, .intern .company , .intern .gpa {
+  background: #F3B838;
+  color: rgb(0, 0, 0);
+  font-family: "Big Shoulders Display", system-ui;
+  text-transform: uppercase;
+  font-size: 25px;
+  padding: 0px 10px;
+  font-weight: 100;
+}
+.intern .program{
+  font-size: 45px;
+  font-weight: 300;
+  line-height: 1.3;
+}
+.intern .bgBottom{
+  margin-top: 20px;
 }
 
-.gpa {
-  font-size: 13px;
+/*Bootcamp*/
+.bootcamp .bgTitle{
+  font-family: "Bangers", system-ui;
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.bootcamp .bgBox{
+  background: #01151E;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.bootcamp .program, .bootcamp .company , .bootcamp .gpa {
+  background: #01151E;
   color: rgb(255, 255, 255);
-  margin: 5px 0;
+  font-family: "Big Shoulders Display", system-ui;
+  text-transform: uppercase;
+  font-size: 25px;
+  padding: 0px 10px;
+  font-weight: 100;
+}
+.bootcamp .program{
+  font-size: 45px;
+  font-weight: 300;
+}
+.bootcamp .bgBottom{
+  margin-top: 20px;
 }
 
 /* Skills Section */
@@ -248,7 +343,7 @@
 }
 
 .skillSet {
-  box-shadow: 1px 1px 1px 1px rgba(221, 103, 123, 0.527);
+  box-shadow: 1px 1px 1px 1px #F3B838;
   padding: 20px;
   margin: 10px;
   display: flex;
@@ -319,7 +414,7 @@
   padding: 10px;
   border-radius: 10px;
   width: 500px;
-  box-shadow: 0 4px 10px rgba(221, 103, 123, 0.527);
+  box-shadow: 0 4px 10px #F3B838;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
