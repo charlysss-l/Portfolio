@@ -175,7 +175,6 @@
 /*Background*/
 .background{
   height: 100vh;
-  margin-top: 100px;
 }
 .SectionTitle{
   display: flex;
@@ -334,6 +333,10 @@
   flex-direction: column;
   height: 80vh;
 }
+.SectionTitle{
+  margin-top: 73px;
+}
+
 .AllSkills{
   display: flex;
   padding: 30px;
@@ -426,7 +429,6 @@
 
 /* Projects Section */
 .projects {
-  padding: 5% 5%;
   text-align: left;
   color: white;
 }
@@ -436,13 +438,29 @@
   font-size: 36px;
   text-align: center;
 }
-
+.frontend, .full-stack{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.frontendDesc, .fullstackDesc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.frontendProjects, .fullStackProjects{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
 .project-container {
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
   justify-content: center;
-  margin-bottom: 10px;
+
   
 }
 
@@ -452,6 +470,8 @@
   width: 500px;
   box-shadow: 0 4px 10px #F3B838;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 calc(33.333% - 50px);
+  max-width: (33.333% - 50px);
 }
 
 .project:hover {
@@ -461,14 +481,14 @@
 
 .project-image {
   margin: auto;
-  width: 70%;
+  width: 60%;
   height: auto;
   border-radius: 5px;
 }
 
 .project-name {
   color: white;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -479,10 +499,11 @@
 
 .devInfo span {
   color: rgb(221, 103, 123);
+  font-size: 12px;
 }
 
 .date-developed, .position {
-  font-size: 14px;
+  font-size: 12px;
   color: rgb(255, 255, 255);
 }
 
@@ -491,7 +512,7 @@
 }
 
 .description {
-  font-size: 16px;
+  font-size: 12px;
   color: rgb(255, 255, 255);
   width: 100%;
   text-align: justify;
@@ -548,6 +569,12 @@
 
 /* Contact Section */
 .contact {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
   color: white;
   background-color: #1e1e1e;
 }
