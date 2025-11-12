@@ -13,55 +13,44 @@ body {
     overflow-x: hidden;
 }
 
-/* Navbar layout */
+/* Navbar */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    justify-content: center;
-    margin: 20px;
+    padding: 20px;
 }
 
+/* Links */
 .nav-links {
     display: flex;
     gap: 30px;
-    text-align: center;
-    align-items: center;
     justify-content: center;
-    z-index: 1; 
+    align-items: center;
+    z-index: 900; 
 }
-.nav-links.active {
-    display: flex;
-    z-index: 9999; 
-}
-.nav-links.active a {
-    pointer-events: auto; 
-}
-.nav-links a {
-    pointer-events: auto;
+
+.navLink {
+    color: white;
+    text-decoration: none;
     padding: 10px 0;
     display: block; 
 }
-.navLink{
-  color: white;
-  text-decoration: none;
-      text-align: center;
-    align-items: center;
-    justify-content: center;
-  
-}
-.navLink:hover {
-    color: rgb(194, 144, 144);
-   
-    transition: 0.1s;
-}
-/* Burger menu (hidden on large screens) */
+
+/* Burger menu */
 .burger {
     display: none;
     flex-direction: column;
-    cursor: pointer;
     gap: 5px;
+    cursor: pointer;
+    z-index: 1100; 
 }
 
 .burger div {
@@ -70,25 +59,31 @@ body {
     background-color: white;
 }
 
-/* Responsive: show burger and hide links initially */
+/* Responsive */
 @media (max-width: 768px) {
     .burger {
         display: flex;
     }
+
     .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #0C0C0C;
         position: absolute;
-        top: 60px; /* below header */
+        top: 60px; 
         left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: #0C0C0C;
+        display: none;
         padding: 10px 0;
-        text-align: center;
         gap: 10px;
+        z-index: 1000;
     }
+
     .nav-links.active {
         display: flex;
+    }
+
+    .navLink {
+        pointer-events: auto;
     }
 }
 
