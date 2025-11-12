@@ -334,6 +334,209 @@ body {
   margin-top: 20px;
 }
 
+/* Background Section Responsiveness */
+@media (max-width: 1200px) {
+    .bgAll {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .college .bgBox,
+    .shs .bgBox,
+    .intern .bgBox,
+    .bootcamp .bgBox {
+        width: 250px;
+        height: auto;
+        padding: 20px;
+    }
+
+    .college .program,
+    .shs .program,
+    .intern .program,
+    .bootcamp .program {
+        font-size: 35px;
+    }
+
+    .college .sch, .college .gpa,
+    .shs .sch, .shs .gpa,
+    .intern .company, .intern .gpa,
+    .bootcamp .company, .bootcamp .gpa {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .SectionTitle {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .SectionTitle h2 {
+        font-size: 40px;
+        padding: 10px;
+    }
+
+    .SectionTitle p {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+    .bgAll {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .college .bgBox,
+    .shs .bgBox,
+    .intern .bgBox,
+    .bootcamp .bgBox {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .college .program,
+    .shs .program,
+    .intern .program,
+    .bootcamp .program {
+        font-size: 28px;
+    }
+
+    .college .sch, .college .gpa,
+    .shs .sch, .shs .gpa,
+    .intern .company, .intern .gpa,
+    .bootcamp .company, .bootcamp .gpa {
+        font-size: 16px;
+    }
+
+    .bgTitle {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .SectionTitle h2 {
+        font-size: 32px;
+    }
+
+    .SectionTitle p {
+        font-size: 14px;
+    }
+
+    .college .program,
+    .shs .program,
+    .intern .program,
+    .bootcamp .program {
+        font-size: 24px;
+    }
+
+    .college .sch, .college .gpa,
+    .shs .sch, .shs .gpa,
+    .intern .company, .intern .gpa,
+    .bootcamp .company, .bootcamp .gpa {
+        font-size: 14px;
+    }
+
+    .bgTitle {
+        font-size: 24px;
+    }
+}
+
+/*Work Section*/
+.work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.SectionTitle {
+    font-family: "Bangers", cursive;
+    font-size: 100px;
+    margin: 0;
+}
+
+.SectionTitle h2 {
+    font-family: "Bangers", system-ui;
+    font-size: 55px;
+    letter-spacing: 5px;
+}
+
+.SectionTitle p {
+    font-family: "Big Shoulders Display", system-ui;
+    font-size: 22px;
+}
+
+.workAll {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.workCard {
+    background-color: #1c1c1c;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.workCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.workCard h3 {
+    font-family: "Bangers", system-ui;
+    color: #e4b70c;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.workCard h4 {
+    font-family: "Big Shoulders Display", system-ui;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.workCard ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.workCard p {
+    font-family: "Big Shoulders Display", system-ui;
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .workCard {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .workCard {
+        width: 100%;
+    }
+
+    .SectionTitle h2 {
+        font-size: 45px;
+    }
+
+    .SectionTitle p {
+        font-size: 18px;
+    }
+}
+
 /* Skills Section */
 .skills {
   display: flex;
@@ -430,6 +633,106 @@ body {
 
 .skillType span {
   font-size: 16px;
+}
+
+/* Skills Section Responsiveness */
+@media (max-width: 1200px) {
+    .AllSkills {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .skillSetFront,
+    .skillSetBackend,
+    .skillSetDatabase,
+    .skillSetWebDesign,
+    .skillSetTools {
+        width: 220px;
+        padding: 15px;
+    }
+
+    .skillEnd {
+        font-size: 18px;
+    }
+
+    .skillType {
+        font-size: 20px;
+    }
+
+    .skillType img.tech-img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .SectionTitle {
+        text-align: center;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0 10px;
+    }
+
+    .SectionTitle h2 {
+        font-size: 40px;
+    }
+
+    .SectionTitle p {
+        font-size: 16px;
+    }
+
+    .AllSkills {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 20px 10px;
+    }
+
+    .skillSetFront,
+    .skillSetBackend,
+    .skillSetDatabase,
+    .skillSetWebDesign,
+    .skillSetTools {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .skillEnd {
+        font-size: 16px;
+    }
+
+    .skillType {
+        font-size: 18px;
+    }
+
+    .skillType img.tech-img {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .SectionTitle h2 {
+        font-size: 32px;
+    }
+
+    .SectionTitle p {
+        font-size: 14px;
+    }
+
+    .skillEnd {
+        font-size: 14px;
+    }
+
+    .skillType {
+        font-size: 16px;
+    }
+
+    .skillType img.tech-img {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 
@@ -647,55 +950,85 @@ body {
   color: #00d8ff;
 }
 
-/* Contact Section */
+/* Contact Section Responsiveness */
 .contact {
-  color: white;
-  text-align: center;
-  height: 70vh;
-  overflow-y: hidden;
-  background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    height: 70vh;
 }
- .contactBottom h2{
-  font-size: 200px;
-  font-family: "Bangers", system-ui;
+
+.contactBottom h2 {
+    font-size: 200px;
+    font-family: "Bangers", system-ui;
+    margin: 0;
 }
+
+/* Email link */
 .contactBottom h3 a {
-  text-decoration: none;
-  color:grey
-}
-.contactBottom h4{
-  background-color: #E4B70C;
-  font-size: 45px;
-  margin-top: 50px;
-  color: black;
-  font-family: "Bangers", system-ui;
-  letter-spacing: 8px;
-}
-/* Footer Section */
-.footer {
-  padding: 20px 10%;
-  text-align: center;
-  color: white;
-  margin-top: 30px;
- 
+    text-decoration: none;
+    color: grey;
+    font-size: 25px;
 }
 
-.footer h4 {
-  font-size: 12px;
-  font-weight: normal;
-  color: rgba(255, 255, 255, 0.8);
+/* Subtitle */
+.contactBottom h4 {
+    background-color: #E4B70C;
+    font-size: 45px;
+    margin-top: 50px;
+    color: black;
+    font-family: "Bangers", system-ui;
+    letter-spacing: 8px;
+    padding: 5px 10px;
 }
 
-.footer a {
-  font-size: 14px;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
+/* Medium screens */
+@media (max-width: 1200px) {
+    .contactBottom h2 {
+        font-size: 120px;
+    }
+    .contactBottom h3 a {
+        font-size: 20px;
+    }
+    .contactBottom h4 {
+        font-size: 35px;
+    }
 }
 
-.footer a:hover {
-  color: rgba(221, 103, 123, 0.527);
+/* Tablets / small desktops */
+@media (max-width: 768px) {
+    .contact {
+        height: auto;
+        padding: 40px 20px;
+    }
+    .contactBottom h2 {
+        font-size: 80px;
+    }
+    .contactBottom h3 a {
+        font-size: 18px;
+    }
+    .contactBottom h4 {
+        font-size: 28px;
+        letter-spacing: 5px;
+    }
 }
+
+/* Mobile screens */
+@media (max-width: 480px) {
+    .contactBottom h2 {
+        font-size: 50px;
+    }
+    .contactBottom h3 a {
+        font-size: 16px;
+    }
+    .contactBottom h4 {
+        font-size: 22px;
+        letter-spacing: 3px;
+    }
+}
+
+
 
 
