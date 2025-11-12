@@ -29,6 +29,19 @@ body {
     text-align: center;
     align-items: center;
     justify-content: center;
+    z-index: 1; 
+}
+.nav-links.active {
+    display: flex;
+    z-index: 9999; 
+}
+.nav-links.active a {
+    pointer-events: auto; 
+}
+.nav-links a {
+    pointer-events: auto;
+    padding: 10px 0;
+    display: block; 
 }
 .navLink{
   color: white;
@@ -904,131 +917,104 @@ body {
 .project-link {
   color: rgb(221, 103, 123);
 }
-
 /* Contact Section */
 .contact {
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 100px;
-  color: white;
-  background-color: #1e1e1e;
-}
-
-.contact h2 {
-  font-size: 36px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.contact-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 40px;
-}
-
-.contact-description {
-  flex: 1;
-  text-align: left;
-  max-width: 500px;
-}
-
-.contact-description h4 {
-  font-size: 16px;
-  margin: 10px 0;
-}
-
-.contact-description a {
-  color: #00b7ff;
-  text-decoration: none;
-}
-
-.contact-description a:hover {
-  color: #00d8ff;
-}
-
-/* Contact Section Responsiveness */
-.contact {
+    color: white;
+    text-align: center;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 20px;
-    height: 70vh;
+    background-color: #0C0C0C;
+    padding: 0 20px;
+}
+
+.contactBottom {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .contactBottom h2 {
-    font-size: 200px;
-    font-family: "Bangers", system-ui;
+    font-family: 'Bangers', cursive;
+    font-size: 120px;
+    line-height: 1;
     margin: 0;
 }
 
-/* Email link */
+.contactBottom h3 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 24px;
+    margin: 0;
+}
+
 .contactBottom h3 a {
     text-decoration: none;
-    color: grey;
-    font-size: 25px;
+    color: #B0B0B0;
+    transition: color 0.3s ease;
 }
 
-/* Subtitle */
+.contactBottom h3 a:hover {
+    color: #E4B70C;
+}
+
 .contactBottom h4 {
     background-color: #E4B70C;
-    font-size: 45px;
-    margin-top: 50px;
+    font-family: 'Bangers', cursive;
+    font-size: 35px;
+    padding: 10px 20px;
     color: black;
-    font-family: "Bangers", system-ui;
-    letter-spacing: 8px;
-    padding: 5px 10px;
+    letter-spacing: 6px;
+    margin-top: 20px;
+    border-radius: 10px;
 }
 
-/* Medium screens */
-@media (max-width: 1200px) {
-    .contactBottom h2 {
-        font-size: 120px;
-    }
-    .contactBottom h3 a {
-        font-size: 20px;
-    }
-    .contactBottom h4 {
-        font-size: 35px;
-    }
+/* Add extra details (optional) */
+.contactBottom p {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 20px;
+    color: #B0B0B0;
+    line-height: 1.5;
 }
 
-/* Tablets / small desktops */
-@media (max-width: 768px) {
-    .contact {
-        height: auto;
-        padding: 40px 20px;
-    }
+/* Responsive adjustments */
+@media (max-width: 1024px) {
     .contactBottom h2 {
-        font-size: 80px;
-    }
-    .contactBottom h3 a {
-        font-size: 18px;
+        font-size: 90px;
     }
     .contactBottom h4 {
         font-size: 28px;
-        letter-spacing: 5px;
+        letter-spacing: 4px;
     }
 }
 
-/* Mobile screens */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .contactBottom h2 {
-        font-size: 50px;
+        font-size: 60px;
     }
-    .contactBottom h3 a {
-        font-size: 16px;
+    .contactBottom h3 {
+        font-size: 20px;
     }
     .contactBottom h4 {
-        font-size: 22px;
+        font-size: 24px;
         letter-spacing: 3px;
+        padding: 8px 16px;
     }
 }
 
-
-
-
+@media (max-width: 480px) {
+    .contactBottom h2 {
+        font-size: 45px;
+    }
+    .contactBottom h3 {
+        font-size: 18px;
+    }
+    .contactBottom h4 {
+        font-size: 20px;
+        letter-spacing: 2px;
+        padding: 6px 12px;
+    }
+}

@@ -25,6 +25,14 @@
                 </div>
             </nav>
         </header>
+        <script>
+            const burger = document.getElementById('burger');
+            const navLinks = document.getElementById('nav-links');
+
+            burger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        </script>
 
     <div id="contact" class="contact">
 
