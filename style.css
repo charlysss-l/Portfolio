@@ -1,175 +1,182 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&display=swap');
 
 * {
-  background-color: #0C0C0C;
-  color: white;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  font-size: 16px;
-  overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+body {
+    background-color: #0C0C0C;
+    color: white;
+    overflow-x: hidden;
 }
 
-/* Header Section */
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  padding: 20px 5%;
-  position: fixed;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  z-index: 1;
-}
-
+/* Navbar layout */
 .navbar {
-  display: flex;
-  gap: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin: 20px;
 }
 
-.navLink {
+.nav-links {
+    display: flex;
+    gap: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.navLink{
   color: white;
   text-decoration: none;
-  padding: 8px 16px;
-  border-radius: 8px;
-  transition: color 0.3s ease;
+      text-align: center;
+    align-items: center;
+    justify-content: center;
+  
 }
-
 .navLink:hover {
-  color: rgb(221, 103, 123);
+    color: rgb(194, 144, 144);
+   
+    transition: 0.1s;
+}
+/* Burger menu (hidden on large screens) */
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
 }
 
-/* Home Section */
-.home {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 20px;
-  height: 100vh;
-
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
 }
 
-.InfoTop {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  overflow-y: hidden;
-}
-
-.titleTop {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  text-align: center;
-  overflow-x: hidden;
-
-}
-
-.jobTitle{
-  font-size: 300px;
-  font-family: "Bangers", system-ui;
-  width: 800px;
-}
-
-.topNameButtons{
-  justify-content: flex-end;
-  align-items:flex-end;
-  text-align: right;
-}
-.topNameButtons .myName{
-  font-family: 'Bangers', system-ui;
-  font-size: 35px;
-  font-weight: 300;
-  letter-spacing: 10px;
-  background-color: #E4B70C;
-  padding: 0px 20px;
-  color: black;
-}
-.home-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin-top: 20px;
-}
-
-.githubButton , .resumeButton{
-  display: inline-flex;
-  align-items: center;
-  font-family: "Big Shoulders Display", sans-serif;
-  text-transform: uppercase;
-  background: #FFFFFF;
-  border-radius: 8px;
-  text-decoration: none;
-  color: black;
-  width: 180px;
-  font-size: 30px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  letter-spacing: 10px;
-}
-.githubButton:hover, .resumeButton:hover{
-  background: transparent;
-  color: rgb(194, 144, 144);
-  border: 1px solid white;
-}
-
-.linkedinButton{
-  display: inline-flex;
-  align-items: center;
-  font-family: "Big Shoulders Display", sans-serif;
-  text-transform: uppercase;
-  background: transparent;
-  border: 1px solid white;
-  border-radius: 8px;
-  text-decoration: none;
-  color: white;
-  width: 180px;
-  font-size: 30px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  letter-spacing: 10px;
-}
-.linkedinButton:hover{
-  background: white;
-  color: rgb(146, 15, 15);
+/* Responsive: show burger and hide links initially */
+@media (max-width: 768px) {
+    .burger {
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #0C0C0C;
+        position: absolute;
+        top: 60px; /* below header */
+        left: 0;
+        padding: 10px 0;
+        text-align: center;
+        gap: 10px;
+    }
+    .nav-links.active {
+        display: flex;
+    }
 }
 
 
-.icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    padding: 0 20px;
+}
+.hero-title {
+    font-family: "Bangers", cursive;
+    font-size: 100px;
+    margin: 0;
+}
+.hero-subtitle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    font-family: 'Bangers', cursive;
+}
+.hero-name {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 35px;
+    font-family: 'Bangers', cursive;
+    background-color: #E4B70C;
+    color: black;
+    padding: 5px 15px;
 }
 
-.InfoBottom{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  text-align: center;
-  overflow-y: hidden;
+/* Web Dev Section */
+.webdev-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    padding: 50px 20px;
+    text-align: left;
+    margin: 100px;
 }
-.InfoBottom p{
-  font-family: "Big Shoulders Display", system-ui;
-  text-align: right;
-  font-size: 30px;
+.webdev-content .hello {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 100px;
+    text-transform: uppercase;
+    font-weight: bolder;
 }
-.jobTitleBottom{
-  font-size: 300px;
-  font-family: "Bangers", system-ui;
-  padding: 30px;
+.webdev-content .name {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 24px;
+}
+.webdev-content p {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 24px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.webdev-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+.githubButton, .resumeButton {
+    background: #fff;
+    color: black;
+    text-decoration: none;
+    padding: 10px 25px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+.githubButton:hover, .resumeButton:hover {
+    background: transparent;
+    color: rgb(194, 144, 144);
+    border: 1px solid white;
+}
+.linkedinButton {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+}
+.linkedinButton:hover {
+    background: white;
+    color: rgb(146, 15, 15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-title { font-size: 60px; }
+    .hero-subtitle { font-size: 20px; top: 15px; left: 15px; }
+    .hero-name { font-size: 25px; bottom: 15px; right: 15px; }
+    .webdev-content p { font-size: 20px; }
 }
 
 /*Background*/

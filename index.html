@@ -8,48 +8,53 @@
         
         <header class="header">
             <nav class="navbar">
-                <a href="index.html" class="navLink">Home</a> 
-                <a href="backgound.html" class="navLink">Background</a> 
-                <a href="work.html" class="navLink">Work Experience</a> 
-                <a href="skills.html" class="navLink">Skills</a> 
-                <a href="projects.html" class="navLink">Projects</a> 
-                <a href="contact.html" class="navLink">Contact</a> 
+                <div class="burger" id="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="nav-links" id="nav-links">
+                    <a href="index.html" class="navLink">Home</a>
+                    <a href="backgound.html" class="navLink">Background</a>
+                    <a href="work.html" class="navLink">Work Experience</a>
+                    <a href="skills.html" class="navLink">Skills</a>
+                    <a href="projects.html" class="navLink">Projects</a>
+                    <a href="contact.html" class="navLink">Contact</a>
+                </div>
             </nav>
         </header>
 
-    <div id="home" class="home">
-        <div class="InfoTop">
-            <div class="titleTop">
-                <div class="TitleDiv">
-                    <h2 class="jobTitle">Web</h2>
-                </div>
-                <div class="topNameButtons">
-                    <h3 class="myName">Charlize Mikaela Nadela</h3>
-                    <div class="home-buttons">
-                        <a class="githubButton" href="https://github.com/charlysss-l" target="_blank">
-                         GitHub
-                        </a>
-                        <a class="linkedinButton" href="https://www.linkedin.com/in/charlizenadela-dev/" target="_blank">
-                        LinkedIn
-                        </a>
-                        <a class="resumeButton" href="documents/Nadela_Web Developer.pdf" download>
-                         Resume
-                        </a>
-                    </div>  
-                </div>
+        <script>
+            const burger = document.getElementById('burger');
+            const navLinks = document.getElementById('nav-links');
+
+            burger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        </script>
+
+          <!-- HERO SECTION -->
+        <section id="home" class="hero-section">
+            <h2 class="hero-subtitle">UI/UX Developer</h2>
+            <h1 class="hero-title">Portfolio</h1>
+            <h3 class="hero-name">Charlize Mikaela Nadela</h3>
+        </section>
+
+     <!-- Web Developer Section -->
+    <section id="webdev" class="webdev-section">
+        <div class="webdev-content">
+            <p class="hello">Hello! </p>
+            <p class="name"> I am Charlize Mikaela Nadela<br></p>
+            <p>
+            Greetings, ladies and gentlemen.<br><br>
+            I'm a passionate Web Developer and UI/UX Designer, skilled in both design and development. I love creating seamless, visually captivating, and user-focused digital experiences — blending creativity and clean code to bring ideas to life with purpose and precision.</p>
+            <div class="webdev-buttons">
+                <a class="githubButton" href="https://github.com/charlysss-l" target="_blank">GitHub</a>
+                <a class="linkedinButton" href="https://www.linkedin.com/in/charlizenadela-dev/" target="_blank">LinkedIn</a>
+                <a class="resumeButton" href="documents/Web Developer - Nadela, Charlize Mikaela .pdf" download>Resume</a>
             </div>
         </div>
-        <div class="InfoBottom">
-            <p>
-                a COMPUTER SCIENCE student,<br>
-                passionate in frontend development<br> and web design
-            </p>
-            <h2 class="jobTitleBottom">Developer</h2>
-        </div>
- 
-        </div>
-
-    </div>
+    </section>
 
     </body>
 </html>
