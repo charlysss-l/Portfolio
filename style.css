@@ -243,6 +243,18 @@ section {
   flex-direction: column;
   justify-content: center;
 }
+.background:hover .bgBox {
+    opacity: 1;
+    transform: translateY(0);
+}
+.bgBox {
+    border-radius: 10px;
+    width: 300px;
+    min-height: 200px;
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+}
 .SectionTitle{
   display: flex;
   flex-direction: row;
@@ -393,6 +405,7 @@ section {
 .bootcamp .bgBottom{
   margin-top: 20px;
 }
+
 
 /* Background Section Responsiveness */
 @media (max-width: 1200px) {
