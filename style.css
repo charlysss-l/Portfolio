@@ -11,15 +11,23 @@ body {
     background-color: #0C0C0C;
     color: white;
     overflow-x: hidden;
+    padding-top: 70px;
+}
+section {
+    position: relative;
+    width: 100%;
+    padding: 80px 20px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 /* Navbar */
 .header {
     position: fixed;
     top: 0;
-    width: auto;
-    z-index: 1000;
+    width: 100%;
     background-color: #0C0C0C;
+    z-index: 1000;
 
 }
 
@@ -93,7 +101,7 @@ body {
 
 /* Hero Section */
 .hero-section {
-    height: 100vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -126,13 +134,14 @@ body {
 
 /* Web Dev Section */
 .webdev-section {
-    min-height: 100vh;
     display: flex;
-    align-items: left;
+    align-items: center;
     justify-content: center;
-    padding: 50px 20px;
     text-align: left;
-    margin: 100px;
+    background-color: #cfcece;
+    color: black;
+    padding: 10px 50px;
+    
 }
 .webdev-content .hello {
     font-family: "Big Shoulders Display", sans-serif;
@@ -140,15 +149,11 @@ body {
     text-transform: uppercase;
     font-weight: bolder;
 }
-.webdev-content .name {
-    font-family: "Big Shoulders Display", sans-serif;
-    font-size: 24px;
-}
 .webdev-content p {
     font-family: "Big Shoulders Display", sans-serif;
     font-size: 24px;
     line-height: 1.6;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .webdev-buttons {
     display: flex;
@@ -157,8 +162,8 @@ body {
     justify-content: center;
 }
 .githubButton, .resumeButton {
-    background: #fff;
-    color: black;
+    background: #000000;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 10px 25px;
     font-size: 20px;
@@ -167,12 +172,12 @@ body {
 .githubButton:hover, .resumeButton:hover {
     background: transparent;
     color: rgb(194, 144, 144);
-    border: 1px solid white;
+    border: 1px solid rgb(0, 0, 0);
 }
 .linkedinButton {
     background: transparent;
-    border: 1px solid white;
-    color: white;
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(193, 87, 87);
     text-decoration: none;
     padding: 10px 25px;
     border-radius: 8px;
@@ -192,10 +197,10 @@ body {
 
 /*Background*/
 .background{
-  height: 100vh;
+ padding: 80px 20px; 
+  min-height: 100vh; 
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 .SectionTitle{
@@ -554,11 +559,13 @@ body {
 
 /* Skills Section */
 .skills {
+  padding: 50px 20px; 
+  min-height: 100vh; 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 20px;
-  height: 100vh;
+    background-color: #cfcece;
+    color: black;
 }
 .SectionTitle{
   margin-top: 72px;
@@ -570,11 +577,17 @@ body {
   justify-content: center;
   height: auto;
 }
+
 .skillSetFront {
   box-shadow: 1px 1px 1px 1px #FFB902;
   width: 250px;
   margin: 1px;
   padding: 20px;
+
+  h3 {
+    color: black;
+  }
+  
 }
 .skillSetFront:hover{
   transform:  scaleY(1.1);
@@ -586,6 +599,9 @@ body {
   width: 250px;
   margin: 10px;
   padding: 20px;
+    h3 {
+    color: black;
+  }
 }
 .skillSetBackend:hover{
   transform:  scaleY(1.1);
@@ -597,6 +613,9 @@ body {
   width: 250px;
   margin: 10px;
   padding: 20px;
+    h3 {
+    color: black;
+  }
 }
 .skillSetDatabase:hover{
   transform:  scaleY(1.1);
@@ -607,6 +626,9 @@ body {
   width: 250px;
   margin: 10px;
   padding: 20px;
+    h3 {
+    color: black;
+  }
 }
 .skillSetWebDesign:hover{
   transform:  scaleY(1.1);
@@ -618,6 +640,9 @@ body {
   width: 250px;
   margin: 10px;
   padding: 20px;
+    h3 {
+    color: black;
+  }
 }
 .skillSetTools:hover{
   transform:  scaleY(1.1);
@@ -896,7 +921,8 @@ body {
 /* Links Styling */
 .links {
   display: flex;
-  gap: 50%;
+  justify-content: space-between;
+  gap: 10px;
   margin-bottom: 20px;
 }
 
@@ -988,6 +1014,10 @@ body {
     line-height: 1.5;
 }
 
+.contactBottom:hover h4{
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(221, 103, 123, 0.527);
+}
 /* Responsive adjustments */
 @media (max-width: 1024px) {
     .contactBottom h2 {
