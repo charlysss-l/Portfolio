@@ -99,6 +99,7 @@ section {
 }
 
 
+
 /* Hero Section */
 .hero-section {
     height: 30vh;
@@ -108,19 +109,19 @@ section {
     position: relative;
     text-align: center;
     padding: 0 20px;
+    overflow: hidden;
+    animation: fadeIn 1.5s ease-in-out;
 }
+
 .hero-title {
     font-family: "Bangers", cursive;
     font-size: 100px;
     margin: 0;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideUp 1.2s ease forwards 0.3s;
 }
-.hero-subtitle {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    font-size: 30px;
-    font-family: 'Bangers', cursive;
-}
+
 .hero-name {
     position: absolute;
     bottom: 20px;
@@ -130,6 +131,9 @@ section {
     background-color: #E4B70C;
     color: black;
     padding: 5px 15px;
+    border-radius: 8px;
+    opacity: 0;
+    animation: fadeInRight 1.2s ease forwards 1s;
 }
 
 /* Web Dev Section */
@@ -141,59 +145,95 @@ section {
     background-color: #cfcece;
     color: black;
     padding: 10px 50px;
-    
+    opacity: 0;
+    transform: translateY(40px);
+    animation: slideUp 1.2s ease forwards 1.5s;
 }
+
 .webdev-content .hello {
     font-family: "Big Shoulders Display", sans-serif;
     font-size: 100px;
     text-transform: uppercase;
     font-weight: bolder;
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards 1.7s;
 }
+
 .webdev-content p {
     font-family: "Big Shoulders Display", sans-serif;
     font-size: 24px;
     line-height: 1.6;
     margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards 2s;
 }
+
 .webdev-buttons {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease forwards 2.3s;
 }
+
+/* Buttons */
 .githubButton, .resumeButton {
-    background: #000000;
-    color: rgb(255, 255, 255);
+    background: #000;
+    color: #fff;
     text-decoration: none;
     padding: 10px 25px;
     font-size: 20px;
     border-radius: 8px;
+    transition: all 0.3s ease;
 }
 .githubButton:hover, .resumeButton:hover {
     background: transparent;
     color: rgb(194, 144, 144);
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid #000;
+    transform: scale(1.05);
 }
 .linkedinButton {
     background: transparent;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid #000;
     color: rgb(193, 87, 87);
     text-decoration: none;
     padding: 10px 25px;
     border-radius: 8px;
+    transition: all 0.3s ease;
 }
 .linkedinButton:hover {
     background: white;
     color: rgb(146, 15, 15);
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes fadeInRight {
+    0% { opacity: 0; transform: translateX(40px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+@keyframes slideUp {
+    0% { opacity: 0; transform: translateY(40px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
 }
 
 /* Responsive */
 @media (max-width: 768px) {
     .hero-title { font-size: 60px; }
-    .hero-subtitle { font-size: 20px; top: 15px; left: 15px; }
     .hero-name { font-size: 25px; bottom: 15px; right: 15px; }
     .webdev-content p { font-size: 20px; }
+    .webdev-content .hello { font-size: 70px; }
 }
+
 
 /*Background*/
 .background{
