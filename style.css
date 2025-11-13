@@ -17,15 +17,18 @@ body {
 .header {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: auto;
     z-index: 1000;
+    background-color: #0C0C0C;
+
 }
 
 .navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 20px;
+    position: fixed;
+    background-color: #0C0C0C;
+    width: 100%;
 }
 
 /* Links */
@@ -190,6 +193,10 @@ body {
 /*Background*/
 .background{
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .SectionTitle{
   display: flex;
@@ -549,7 +556,9 @@ body {
 .skills {
   display: flex;
   flex-direction: column;
-  height: 80vh;
+  justify-content: center;
+  margin-top: 20px;
+  height: 100vh;
 }
 .SectionTitle{
   margin-top: 72px;
@@ -747,7 +756,11 @@ body {
 
 /* Projects Section */
 .projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: left;
+  margin-top: 20px;
   color: white;
 }
 
