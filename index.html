@@ -1,181 +1,118 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Charlize's Portfolio</title>
-        <link rel="stylesheet" href="style.css"> 
-    </head>
-    <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Charlize Nadela</h1>
+            <ul>
+                <a href="#home" class="navLink">Home</a>
+                <a href="#background" class="navLink">Background</a>
+                <a href="#work" class="navLink">Work Experience</a>
+                <a href="#skills" class="navLink">Skills</a>
+                <a href="#projects" class="navLink">Projects</a>
+                <a href="#contact" class="navLink">Contact</a>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <h1> Charlize Nadela</h1>
+        <a href="https://github.com/charlysss-l" target="_blank"> Charlize Mikaela Nadela - Web Developer</a>
+    </section>
+    
+   <section id="background">
+        <h2> Background</h2>
         
-        <header class="header">
-            <nav class="navbar">
-                <div class="burger" id="burger">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div class="nav-links" id="nav-links">
-                    <a href="#home" class="navLink">Home</a>
-                    <a href="#background" class="navLink">Background</a>
-                    <a href="#work" class="navLink">Work Experience</a>
-                    <a href="#skills" class="navLink">Skills</a>
-                    <a href="#projects" class="navLink">Projects</a>
-                    <a href="#contact" class="navLink">Contact</a>
-                </div>
-            </nav>
-        </header>
-
-        <script>
-        const burger = document.getElementById('burger');
-        const navLinks = document.getElementById('nav-links');
-
-        burger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-        </script>
-
-        <!-- HERO SECTION -->
-        <section id="home" class="hero-section">
-            <h1 class="hero-title">Portfolio</h1>
-            <h3 class="hero-name">Charlize Mikaela Nadela</h3>
-        </section>
-
-        <!-- WEB DEVELOPER SECTION -->
-        <section id="webdev" class="webdev-section">
-            <div class="webdev-content">
-                <p class="hello">Hello!</p>
-                <p>
-                    Greetings, ladies and gentlemen.<br>
-                    I'm a passionate Web Developer and UI/UX Designer, skilled in both design and development. 
-                    I love creating seamless, visually captivating, and user-focused digital experiences — blending creativity 
-                    and clean code to bring ideas to life with purpose and precision.
-                </p>
-                <div class="webdev-buttons">
-                    <a class="githubButton" href="https://github.com/charlysss-l" target="_blank">GitHub</a>
-                    <a class="linkedinButton" href="https://www.linkedin.com/in/charlizenadela-dev/" target="_blank">LinkedIn</a>
-                    <a class="resumeButton" href="documents/Web Developer - Nadela, Charlize Mikaela .pdf" download>Resume</a>
-                </div>
-            </div>
-        </section>
-
-
-    <!-- BACKGROUND SECTION -->
-        <section id="background" class="background">
-            <div class="SectionTitle">
-                <h2 class="backgroundTitle">Background</h2>
-                <p>THIS SECTION CONTAINS MY EDUCATIONAL<br> BACKGROUND</p>
+        <div class="bg-con">
+            <div class="bg-item">
+                <h1>College</h1>
+                <h2>Bachelor of Science in Computer Science</h2>
+                <h2>Cavite State University</h2>
+                <h2>2021 - September 2025</h2>
             </div>
 
-            <div class="bgAll">
-                <div class="college">
-                    <div class="bgBox">
-                        <h2 class="program">Bachelor of Science<br> in Computer Science</h2>
-                        <div class="bgBottom">
-                            <h4 class="sch">Cavite State University</h4>
-                            <h4 class="gpa">2021 - September 2025</h4>
-                        </div>
-                    </div>
-                    <h2 class="bgTitle">College</h2>
-                </div>
-
-                <div class="shs">
-                    <h2 class="bgTitle">Senior High School</h2>
-                    <div class="bgBox">
-                        <h2 class="program">Science, Technology, Engineering, and Mathematics</h2>
-                        <div class="bgBottom">
-                            <h4 class="sch">Technological Institute of the Philippines</h4>
-                            <h4 class="gpa">GPA: 92 / 1.5</h4>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="intern">
-                    <div class="bgBox">
-                        <h2 class="program">Full-stack Developer / Technical Support</h2>
-                        <div class="bgBottom">
-                            <h4 class="company">FiveTwenty IT Services - Alabang</h4>
-                            <h4 class="gpa">July - September 2024</h4>
-                        </div>
-                    </div>
-                    <h2 class="bgTitle">Internship</h2>
-                </div>
-
-                <div class="bootcamp">
-                    <h2 class="bgTitle">BootCamp</h2>
-                    <div class="bgBox">
-                        <h2 class="program">Full-stack Developer</h2>
-                        <h4 class="company">Learn Computer Today</h4>
-                        <h4 class="gpa">January 2025 - Current</h4>
-                    </div>
-                </div>
+            <div class="bg-item">
+                <h1>SHS</h1>
+                <h2>Science, Technology, Engineering, and Mathematics</h2>
+                <h2>Technological Institute of the Philippines</h2>
+                <h2>2018 - 2020</h2>
             </div>
-        </section>
 
-    <!--Work Section-->
-        <section id="work"class="work">
-            <div class="SectionTitle">
-                <h2 class="backgroundTitle">Work Experience</h2>
-                <p>
-                    THIS SECTION CONTAINS THE LIST OF MY <br>WORK EXPERIENCE
+            <div class="bg-item">
+                <h1>Internship</h1>
+                <h2>Full-stack Developer / Technical Support</h2>
+                <h2>FiveTwenty IT Services - Alabang</h2>
+                <h2>July - September 2024</h2>
+            </div>
+
+            <div class="bg-item">
+                <h1>Bootcamp</h1>
+                <h2>Full-stack Developer</h2>
+                <h2>Learn Technology Today</h2>
+                <h2>January 2025 - Current</h2>
+            </div>
+        </div>
+        </div>
+   </section>
+
+   <section id="work">
+        <h1> Work Experience</h2>
+        
+        <div class="work-con">
+            <div class="work-item">
+                <h1>Operations Customer Expert I		</h1>
+                <h2>Teleperformance</h2>
+                <h2>April 2025- October 2025 </h2>
+                <p> 
+                    Responded to customer inquiries via phone, outbound call, and live chat. Documented customer interactions and maintained detailed records in the system
                 </p>
             </div>
 
-            <div class="workAll">
-                <!-- Operations Customer Expert I -->
-                <div class="workCard">
-                    <h3>Operations Customer Expert I</h3>
-                    <h4>Teleperformance | April 2025 - October 2025</h4>
-                    <ul>
-                        <li>Responded to customer inquiries via phone, outbound call, and live chat</li>
-                        <li>Documented customer interactions and maintained detailed records in the system</li>
-                    </ul>
-                </div>
-
-                <!-- Technical Support Intern -->
-                <div class="workCard">
-                    <h3>Technical Support Intern</h3>
-                    <h4>FiveTwenty IT Services | July 2024 - September 2024</h4>
-                    <ul>
-                        <li>Contributed to the development of two Web-Based Systems</li>
-                        <li>Provided hardware and software technical support to clients</li>
-                        <li>Set up and configured computer networks</li>
-                    </ul>
-                </div>
-
-                <!-- Social Media Management -->
-                <div class="workCard">
-                    <h3>Social Media Management</h3>
-                    <h4>February 2022 - July 2022</h4>
-                    <ul>
-                        <li>Managed chat support and answered inquiries for property listings</li>
-                        <li>Scheduled Facebook posts and basic ad campaigns to generate leads</li>
-                        <li>Prepared quick client follow-ups to support customer engagement</li>
-                    </ul>
-                </div>
-
-                <!-- Encoder -->
-                <div class="workCard">
-                    <h3>Encoder</h3>
-                    <h4>February 2021 - February 2025</h4>
-                    <ul>
-                        <li>Performed accurate data entry for client-provided information</li>
-                        <li>Provided basic remote troubleshooting via Anydesk, TeamViewer, and HelpWire</li>
-                    </ul>
-                </div>
-
-                <!-- Web Developer | Project-Based -->
-                <div class="workCard">
-                    <h3>Web Developer | Project-Based</h3>
-                    <h4>September 2021 – October 2025</h4>
-                    <ul>
-                        <li>Designed responsive landing pages focusing on UX and conversion</li>
-                        <li>Built and deployed full-stack websites with admin dashboards and database integration</li>
-                    </ul>
-                </div>
+            <div class="work-item">
+                <h1>Technical Support Intern</h1>
+                <h2>FiveTwenty IT Services</h2>
+                <h2> July 2024 - September 2024	 </h2>
+                <p> 
+                   Contributed to the development of two Web-Based Systems. Provided hardware and software technical support to clients. Set up and configured computer networks.
+                </p>
             </div>
-        </section>
 
-    <!--Skills Section-->
-        <section id="skills" class="skills">
+            <div class="work-item">
+                <h1>Social Media Management </h1>
+                <h2>Freelance</h2>
+                <h2> July 2024 - September 2024	 </h2>
+                <p> 
+                  Managed chat support and answered inquiries for property listings. Scheduled Facebook posts and basic ad campaigns to generate leads. Prepared quick client follow-ups to support customer engagement
+                </p>
+            </div>
+
+            <div class="work-item">
+                <h1>Encoder </h1>
+                <h2>Freelance</h2>
+                <h2> February 2021 - February 2025		 </h2>
+                <p> 
+                  Performed accurate data entry for client-provided information. Provided basic remote troubleshooting via Anydesk, TeamViewer, and HelpWire
+                  </p>
+            </div>
+
+
+            <div class="work-item">
+                <h1>Web Developer - Project Based </h1>
+                <h2>Freelance</h2>
+                <h2> September 2021 – October 2025		 </h2>
+                <p> 
+                  Designed responsive landing pages focusing on UX and conversion. Built and deployed full-stack websites with admin dashboards and database integration</p>
+            </div>
+
+        </div>
+   </section>
+
+       <section id="skills" class="skills">
             <div class="SectionTitle">
                 <h2 class="backgroundTitle"> Skills</h2>
                 <p>
@@ -194,6 +131,7 @@
                     <li class="skillType"><img class="tech-img" src="images/typescript.png" alt="Typescript" />Typescript</li>
                     <li class="skillType"><img class="tech-img" src="images/react.png" alt="React" />React</li>
                     <li class="skillType"><img class="tech-img" src="images/scss.png" alt="SCSS" />SCSS</li>
+                          <li class="skillType"><img class="tech-img" src="images/wordpress.png" alt="Wordpress" />WordPress</li>
                     </ul>
                 </div>
             
@@ -233,374 +171,40 @@
                 </div>
             </div>
         </section>
-    
-    <!--Projects Section-->
-        <section id="projects" class="projects">
-            <div class="SectionTitle">
-                <h2 class="backgroundTitle"> Projects</h2>
-                <p>
-                    THESE ARE MY WEB DEVELOPMENT PROJECT
-                </p>
-            </div>
-            
-            <div class="buttonsProjects">
-                <a href="#frontend" class="frontendButton">Frontend</a>
-                <a href="#full-stack" class="fullstackButton">Full-stack</a>
-            </div>
 
-            <div class="project-container">
-                    <section id="frontend" class="frontend">
-                        <div class="frontendDesc">
-                            <h2>Frontend Development Projects</h2>
-                            <p>Includes landing page amd catalog.</p>
-                        </div>
+    <section id="projects" class="projects-section">
 
-                        <div class="frontendProjects">
-                                <!--Photobooth-->
-                                <div class="project">
-                                    <a href="https://charlysss-l.github.io/photobooth/" target="_blank" class="project-link">
-                                        <img src="images/photobooth.png" alt="Photobooth " class="project-image">
-                                    </a>
+    <div class="sidebar">
+        <h2>Projects</h2>
 
-                                    <h2 class="project-name">Photobooth </h2>
-                                    <div class="devInfo">
-                                        <p class="date-developed"><span>Date Developed:</span> 2025</p>
-                                        <p class="position"><span>Position:</span> Frontend Developer</p>
-                                    </div>
+        <h3 class="sideCat">Full-stack Development</h3>
+        <ul>
+            <li onclick="showProject('discoveru')">DiscoverU (2025)</li>
+            <li onclick="showProject('lpReservation')">Launchpad Reservation (2024)</li>
+            <li onclick="showProject('lpInventory')">Launchpad Inventory (2024)</li>
+            <li onclick="showProject('yanas')">Yana’s Tindahan (2024)</li>
+        </ul>
 
-                                    <div class="devDesc">
-                                        <p class="description">
-                                            Personal Project, Created Photobooth System captures fun moments with a high-quality camera, includes a timer for perfect timing, and prints the photos as a photostrip keepsake.
-                                        </p>
-                                        <p class="tech-stack"> <span>Tech Stack:</span> HTML5, CSS3, JavaScript</p>
+        <h3 class="sideCat">Frontend Development</h3>
+        <ul>
+            <li onclick="showProject('attheory')">A&T Theory (2025)</li>
+            <li onclick="showProject('naildit')">Nail’d It! (2025)</li>
+            <li onclick="showProject('snuggle')">Snuggle Buddies (2025)</li>
+            <li onclick="showProject('photobooth')">Photobooth (2025)</li>
+            <li onclick="showProject('webservices')">Web Services (2025)</li>
+            <li onclick="showProject('reflair')">ReFlair Thrift Store (2023)</li>
+            <li onclick="showProject('drnk')">DRNK (2023)</li>
+        </ul>
+    </div>
 
-                                    </div>
+    <div class="projectDisplay" id="projectDisplay">
+        <h2>Select a project</h2>
+        <p>Details will appear here when you click on a project from the sidebar.</p>
+    </div>
 
-                                    <div class="links">
-                                        <div class="gitRepo">
-                                            <img src="images/github.png" alt="Github">
-                                            <a href="https://github.com/charlysss-l/photobooth" target="_blank">GitHub Repository </a>
-                                        </div>
-                                    
-                                    <a href="https://charlysss-l.github.io/photobooth/" target="_blank" class="project-link">View Website</a>
-                                    </div>
-                                </div>
+    </section>
 
-                                <!--Nail'd It-->
-                                <div class="project">
-                                <a href="https://charlysss-l.github.io/naild-It/" target="_blank" class="project-link">
-                                <img src="images/naildIt.png" alt="Nail'd It! " class="project-image">
-                                </a>
-
-                                <h2 class="project-name">Nail'd It! </h2>
-                                <div class="devInfo">
-                                <p class="date-developed"><span>Date Developed:</span> 2025</p>
-                                <p class="position"><span>Position:</span> Frontend Developer</p>
-                                </div>
-
-                                <div class="devDesc">
-                                <p class="description">
-                                    Personal Project, Developed landing page for Nails Technician Business, showcasing nails services and gallery.
-                                </p>
-                                <p class="tech-stack"> <span>Tech Stack:</span> HTML5, CSS3</p>
-
-                                </div>
-
-                                <div class="links">
-                                <div class="gitRepo">
-                                    <img src="images/github.png" alt="Github">
-                                    <a href="https://github.com/charlysss-l/naild-It" target="_blank">GitHub Repository </a>
-                                </div>
-
-                                <a href="https://charlysss-l.github.io/naild-It/" target="_blank" class="project-link">View Website</a>
-                                </div>
-                                </div>
-
-                                <!--Snuggle Buddies-->
-                                <div class="project">
-                                <a href="https://charlysss-l.github.io/snuggle-buddies/" target="_blank" class="project-link">
-                                <img src="images/snuggle.png" alt="Snuggle Buddies " class="project-image">
-                                </a>
-
-                                <h2 class="project-name">Snuggle Buddies</h2>
-                                <div class="devInfo">
-                                <p class="date-developed"><span>Date Developed:</span> 2025</p>
-                                <p class="position"><span>Position:</span> Frontend Developer</p>
-                                </div>
-
-                                <div class="devDesc">
-                                <p class="description">
-                                    Personal Project, Developed landing page for bussiness Snuggle Buddies, displaying different toys collection.
-                                </p>
-                                <p class="tech-stack"> <span>Tech Stack:</span> HTML5, CSS3</p>
-
-                                </div>
-
-                                <div class="links">
-                                <div class="gitRepo">
-                                    <img src="images/github.png" alt="Github">
-                                    <a href="https://github.com/charlysss-l/snuggle-buddies" target="_blank">GitHub Repository </a>
-                                </div>
-
-                                <a href="https://charlysss-l.github.io/snuggle-buddies/" target="_blank" class="project-link">View Website</a>
-                                </div>
-                                </div>
-
-                                <!--WebServices-->
-                                <div class="project">
-                                <a href="https://charlysss-l.github.io/webServices/" target="_blank" class="project-link">
-                                <img src="images/webServices.png" alt="Web Services " class="project-image">
-                                </a>
-
-                                <h2 class="project-name">Web Services </h2>
-                                <div class="devInfo">
-                                <p class="date-developed"><span>Date Developed:</span> 2025</p>
-                                <p class="position"><span>Position:</span> Frontend Developer</p>
-                                </div>
-
-                                <div class="devDesc">
-                                <p class="description">
-                                    Personal Project, Developed landing page, for a company offering web services. 
-                                </p>
-                                <p class="tech-stack"> <span>Tech Stack:</span> HTML5, CSS3</p>
-
-                                </div>
-
-                                <div class="links">
-                                <div class="gitRepo">
-                                    <img src="images/github.png" alt="Github">
-                                    <a href="https://github.com/charlysss-l/webServices" target="_blank">GitHub Repository </a>
-                                </div>
-
-                                <a href="https://charlysss-l.github.io/webServices/" target="_blank" class="project-link">View Website</a>
-                                </div>
-                                </div>
-
-                                <!--Destined-->
-                                <div class="project">
-                                <a href="https://destined-react.vercel.app/" target="_blank" class="project-link">
-                                <img src="images/destined.png" alt="Destined" class="project-image">
-                                </a>
-
-                                <h2 class="project-name">Destined</h2>
-                                <div class="devInfo">
-                                <p class="date-developed"><span>Date Developed:</span> 2024</p>
-                                <p class="position"><span>Position:</span> Frontend Developer</p>
-                                </div>
-
-                                <div class="devDesc">
-                                <p class="description">
-                                    Personal Project, Developed landing page, for wedding dress catalog and to-do list.
-                                </p>
-                                <p class="tech-stack"> <span>Tech Stack:</span> ReactJS, JSX, CSS</p>
-
-                                </div>
-
-                                <div class="links">
-                                <div class="gitRepo">
-                                    <img src="images/github.png" alt="Github">
-                                    <a href="https://github.com/charlysss-l/destined-react" target="_blank">GitHub Repository </a>
-                                </div>
-
-                                <a href="https://destined-react.vercel.app/" target="_blank" class="project-link">View Website</a>
-                                </div>
-                                </div>            
-
-                                <!--DRNK-->
-                                <div class="project">
-                                <a href="https://drnk.vercel.app/" target="_blank" class="project-link">
-                                <img src="images/drnk.png" alt="DRNK" class="project-image">
-                                </a>
-
-                                <h2 class="project-name">DRNK</h2>
-                                <div class="devInfo">
-                                <p class="date-developed"><span>Date Developed:</span> 2023</p>
-                                <p class="position"><span>Position:</span> Frontend Developer</p>
-                                </div>
-
-                                <div class="devDesc">
-                                <p class="description">
-                                    Designed and developed a sleek landing page for alcoholic beverages to promote brand visibility.
-                                </p>
-                                <p class="tech-stack"><span>Tech Stack:</span> React, Typescript, SCSS</p>
-
-                                </div>
-
-                                <div class="links">
-                                <div class="gitRepo">
-                                    <img src="images/github.png" alt="Github">
-                                    <a href="https://github.com/charlysss-l/drnk" target="_blank">GitHub Repository </a>
-                                </div>
-
-                                <a href="https://drnk.vercel.app/" target="_blank" class="project-link">View Website</a>
-                                </div>
-                                </div>  
-                        </div>
-                        
-                    </section>
-
-                    <section id="full-stack" class="full-stack">
-                        <div class="fullstackDesc">
-                            <h2>Full-stack Development Projects</h2>
-                            <p>Includes full-stack websites; with CRUD operations.</p>
-                        </div>
-
-                        <div class="fullStackProjects">
-                                                    <!--DiscoverU-->
-                        <div class="project">
-                            <img src="images/discoverU.png" alt="DiscoverU " class="project-image">
-                            <h2 class="project-name">DiscoverU </h2>
-                            <div class="devInfo">
-                                <p class="date-developed"><span>Date Developed:</span> 2024-2025</p>
-                                <p class="position"><span>Position:</span> Full-stack Developer</p>
-                            </div>
-
-                            <div class="devDesc">
-                                <p class="description">
-                                    Thesis,  a collaboratively developed a comprehensive platform for the Psychology Department of Cavite State University to connect students with potential, through online and physical tests with automated checking using Computer Vision.
-                                </p>
-                                <p class="tech-stack"> <span>Tech Stack:</span> MongoDB, Express.js, React, Typescript, Node.js, SCSS, Python</p>
-            
-                            </div>
-        
-                            <div class="links">
-                                <div class="gitRepo">
-                                    <img src="images/github.png" alt="Github">
-                                    <a href="https://github.com/charlysss-l/Psyche" target="_blank">GitHub Repository </a>
-                                </div>
-                            
-                            <!-- <a href="https://charlysss-l.github.io/photobooth/" target="_blank" class="project-link">View Website</a>--> 
-                            </div>
-                        </div>
-
-                        <!--ResV-->
-                        <div class="project">
-                            <a href="https://res-v.vercel.app/" target="_blank" class="project-link">
-                                <img src="images/resV.png" alt="ResV Reservation System " class="project-image">
-                            </a>
-                            <h2 class="project-name">ResV Reservation System </h2>
-                            <div class="devInfo">
-                                <p class="date-developed"><span>Date Developed:</span> 2024</p>
-                                <p class="position"><span>Position:</span> Full-stack Developer</p>
-                            </div>
-
-                            <div class="devDesc">
-                                <p class="description">
-                                    A collaborative project, developed a user-friendly reservation system, enabling seamless client booking and reservation management. Generating QR Code for seat reservation, with admin management for seat details and reservation history.
-                                </p>
-                                <p class="tech-stack"><span>Tech Stack:</span> React, Node.js, MongoDB, Express.js, CSS</p>
-            
-                            </div>
-        
-                            <div class="links">
-                                <div class="gitRepo">
-                                    <img src="images/github.png" alt="Github">
-                                    <a href="https://github.com/charlysss-l/ResV" target="_blank">GitHub Repository </a>
-                                </div>
-                            
-                                <a href="https://res-v.vercel.app/" target="_blank" class="project-link">View Website</a>
-                            </div>
-                        </div>           
-
-                        <!--BanzShoes-->
-                        <div class="project">
-                            <a href="https://banzshoe-admin.vercel.app/" target="_blank" class="project-link">
-                                <img src="images/banzshoes.png" alt="BanzShoes" class="project-image">   
-                            </a>
-                                            
-                            <h2 class="project-name">BanzShoes</h2>
-                            <div class="devInfo">
-                                <p class="date-developed"><span>Date Developed:</span> 2024</p>
-                                <p class="position"><span>Position:</span> Full-stack Developer</p>
-                            </div>
-
-                            <div class="devDesc">
-                                <p class="description">
-                                    Personal Project, Created an inventory management system with full CRUD operations to handle product and stock tracking.
-                                </p>
-                                <p class="tech-stack"> <span>Tech Stack:</span> MongoDB, Express.js, React, Node.js, CSS</p>
-            
-                            </div>
-        
-                            <div class="links">
-                                <div class="gitRepo">
-                                    <img src="images/github.png" alt="Github">
-                                    <a href="https://github.com/charlysss-l/banzshoe" target="_blank">GitHub Repository </a>
-                                </div>
-                            
-                                <a href="https://banzshoe-admin.vercel.app/" target="_blank" class="project-link">View Website</a>
-                            </div>
-                        </div>       
-
-                        <!--ReFlair Thrift Store-->
-                        <div class="project">
-                            <a href="https://reflair-thrift-store.vercel.app/" target="_blank" class="project-link">
-                                <img src="images/reflair.png" alt="ReFlair Thrift Store" class="project-image">
-                            </a>
-
-                            <h2 class="project-name">ReFlair Thrift Store</h2>
-                            <div class="devInfo">
-                                <p class="date-developed"><span>Date Developed:</span> 2024</p>
-                                <p class="position"><span>Position:</span> Frontend Developer</p>
-                            </div>
-
-                            <div class="devDesc">
-                                <p class="description">
-                                    Collaborated with a team to design and develop a modern e-commerce platform for a thrift store. Focused on frontend development and UI/UX Design.
-                                </p>
-                                <p class="tech-stack"> <span>Tech Stack:</span> React, TypeScript, SCSS</p>
-            
-                            </div>
-        
-                            <div class="links">
-                                <div class="gitRepo">
-                                    <img src="images/github.png" alt="Github">
-                                    <a href="https://github.com/pangilinanervin22/reflair_thrift_store" target="_blank">GitHub Repository </a>
-                                </div>
-                            
-                                <a href="https://reflair-thrift-store.vercel.app/" target="_blank" class="project-link">View Website</a>
-                            </div>
-                        </div> 
-                        
-                        <!--Yana’s Tindahan-->
-                        <div class="project">
-                            <img src="images/yanaTindahan.png" alt="Yana’s Tindahan" class="project-image">
-                            <h2 class="project-name">Yana’s Tindahan</h2>
-                            <div class="devInfo">
-                                <p class="date-developed"><span>Date Developed:</span> 2024</p>
-                                <p class="position"><span>Position:</span> Full-stack Developer</p>
-                            </div>
-
-                            <div class="devDesc">
-                                <p class="description">
-                                    Personal Project,Developed a custom Point of Sale (POS) system to manage inventory and sales for a local store.
-                                </p>
-                                <p class="tech-stack"> <span>Tech Stack:</span> MySQL, Express.js, React, Node.js, CSS</p>
-            
-                            </div>
-        
-                            <div class="links">
-                                <div class="gitRepo">
-                                    <img src="images/github.png" alt="Github">
-                                    <a href="https://github.com/charlysss-l/YanaTindahan" target="_blank">GitHub Repository </a>
-                                </div>
-                            
-                                <!--<a href="https://inventory-launchpad.vercel.app/" target="_blank" class="project-link">View Website</a>-->
-                            </div>
-                        </div> 
-                        </div>
-
-                    </section>
-
-                    
-
-
-        
-            </div>
-        </section>
-    
-    <!--Contact Section-->
-        <section id="contact" class="contact">
+            <section id="contact" class="contact">
 
         <div class="contactBottom">
             <h2>Contact Now</h2>
@@ -609,10 +213,15 @@
             <h4>
                 UI DEVELOPER | UX DEVELOPER
             </h4>
+             <div class="webdev-buttons">
+                    <a class="githubButton" href="https://github.com/charlysss-l" target="_blank">GitHub</a>
+                    <a class="linkedinButton" href="https://www.linkedin.com/in/charlizenadela-dev/" target="_blank">LinkedIn</a>
+                    <a class="resumeButton" href="documents/Web Developer - Nadela, Charlize Mikaela .pdf" download>Resume</a>
+            </div>
         </div>
         </section>
-    </div>
-    </body>
+
+
+<script src="projects.js"></script>
+</body>
 </html>
-
-
