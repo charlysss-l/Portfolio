@@ -171,40 +171,36 @@
                 </div>
             </div>
         </section>
-
+    
     <section id="projects" class="projects-section">
-
     <div class="sidebar">
-        <h2>Projects</h2>
+        <h2>Project List</h2>
 
-        <h3 class="sideCat">Full-stack Development</h3>
-        <ul>
-            <li onclick="showProject('discoveru')">DiscoverU (2025)</li>
-            <li onclick="showProject('lpReservation')">Launchpad Reservation (2024)</li>
-            <li onclick="showProject('lpInventory')">Launchpad Inventory (2024)</li>
-            <li onclick="showProject('yanas')">Yana’s Tindahan (2024)</li>
-        </ul>
+        <div class="category">
+            <div class="cat-header" onclick="toggleCategory('frontend')">Frontend ▼</div>
+            <ul class="cat-list" id="frontend-list"></ul>
+        </div>
 
-        <h3 class="sideCat">Frontend Development</h3>
-        <ul>
-            <li onclick="showProject('attheory')">A&T Theory (2025)</li>
-            <li onclick="showProject('naildit')">Nail’d It! (2025)</li>
-            <li onclick="showProject('snuggle')">Snuggle Buddies (2025)</li>
-            <li onclick="showProject('photobooth')">Photobooth (2025)</li>
-            <li onclick="showProject('webservices')">Web Services (2025)</li>
-            <li onclick="showProject('reflair')">ReFlair Thrift Store (2023)</li>
-            <li onclick="showProject('drnk')">DRNK (2023)</li>
-        </ul>
+        <div class="category">
+            <div class="cat-header" onclick="toggleCategory('fullstack')">Fullstack ▼</div>
+            <ul class="cat-list" id="fullstack-list"></ul>
+        </div>
+
+        <div class="category">
+            <div class="cat-header" onclick="toggleCategory('wordpress')">WordPress ▼</div>
+            <ul class="cat-list" id="wordpress-list"></ul>
+        </div>
     </div>
 
     <div class="projectDisplay" id="projectDisplay">
-        <h2>Select a project</h2>
-        <p>Details will appear here when you click on a project from the sidebar.</p>
+        <h2>Project Description</h2>
+        <p>Select a project from the sidebar to see its details.</p>
     </div>
-
     </section>
 
-            <section id="contact" class="contact">
+
+
+    <section id="contact" class="contact">
 
         <div class="contactBottom">
             <h2>Contact Now</h2>
@@ -222,6 +218,11 @@
         </section>
 
 
+        <div id="lightbox" class="lightbox">
+            <span class="close" onclick="closeLightbox()">&times;</span>
+            <img class="lightbox-img" id="lightbox-img" src="" alt="Project Image">
+        </div>
 <script src="projects.js"></script>
+
 </body>
 </html>
