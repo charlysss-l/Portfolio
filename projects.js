@@ -11,16 +11,16 @@ const projects = {
         desc: "Connect students through online and physical tests with automated checking using Computer Vision.",
         images: ["images/discover1.png", "images/discover2.png","images/discover3.png","images/discover4.png","images/discover5.png","images/discover6.png","images/discover7.png"]
     },
-        discoveru: {
-        title: "DiscoverU",
+        eventbooking: {
+        title: "Event Booking System",
         category: "fullstack",
-        type: "Collaborative Project — Thesis",
+        type: "Personal Project",
         year: "2025",
-        website: "https://student-gqoc0f7zw-discoveru.vercel.app",
-        github: "https://github.com/charlysss-l/Psyche",
-        tools: "MongoDB, Express.js, React, Typescript, Node.js, SCSS, Python, JWT Authentication, Figma, Vercel",
-        desc: "Connect students through online and physical tests with automated checking using Computer Vision.",
-        images: ["images/discover1.png", "images/discover2.png","images/discover3.png","images/discover4.png","images/discover5.png","images/discover6.png","images/discover7.png"]
+        website: "",
+        github: "https://github.com/charlysss-l/Event-Booking-System",
+        tools: "PHP, MySQL, CSS, Docker",
+        desc: "A simple web application built with PHP and MySQL running inside Docker. This project demonstrates basic CRUD operations (Create, Read, Update, Delete) on a users table.",
+        images: ["images/event1.png", "images/event2.png","images/event3.png","images/event4.png","images/event5.png"]
     },
     lpReservation: {
         title: "Launchpad Reservation System",
