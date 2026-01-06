@@ -11,6 +11,17 @@ const projects = {
         desc: "Connect students through online and physical tests with automated checking using Computer Vision.",
         images: ["images/discover1.png", "images/discover2.png","images/discover3.png","images/discover4.png","images/discover5.png","images/discover6.png","images/discover7.png"]
     },
+        discoveru: {
+        title: "DiscoverU",
+        category: "fullstack",
+        type: "Collaborative Project — Thesis",
+        year: "2025",
+        website: "https://student-gqoc0f7zw-discoveru.vercel.app",
+        github: "https://github.com/charlysss-l/Psyche",
+        tools: "MongoDB, Express.js, React, Typescript, Node.js, SCSS, Python, JWT Authentication, Figma, Vercel",
+        desc: "Connect students through online and physical tests with automated checking using Computer Vision.",
+        images: ["images/discover1.png", "images/discover2.png","images/discover3.png","images/discover4.png","images/discover5.png","images/discover6.png","images/discover7.png"]
+    },
     lpReservation: {
         title: "Launchpad Reservation System",
         category: "fullstack",
