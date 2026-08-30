@@ -3,234 +3,984 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+
+    <title>Charlize Nadela | Junior Full-Stack Web Developer</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <h1>Charlize Nadela</h1>
-            <ul>
-                <a href="#home" class="navLink">Home</a>
-                <a href="#background" class="navLink">Background</a>
-                <a href="#work" class="navLink">Work Experience</a>
-                <a href="#skills" class="navLink">Skills</a>
-                <a href="#projects" class="navLink">Projects</a>
-                <a href="#contact" class="navLink">Contact</a>
+
+<body class="bg-zinc-50 text-zinc-900">
+
+    <header class="border-b border-zinc-200 bg-zinc-50">
+        <nav class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-6 px-6 py-5 lg:px-10">
+
+            <h1 class="text-xl font-bold tracking-tight">
+                Charlize Nadela
+            </h1>
+
+            <ul class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
+                <li>
+                    <a href="#hero" class="text-sm font-medium text-zinc-600 transition hover:text-black">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#about" class="text-sm font-medium text-zinc-600 transition hover:text-black">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#work" class="text-sm font-medium text-zinc-600 transition hover:text-black">
+                        Work
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#background" class="text-sm font-medium text-zinc-600 transition hover:text-black">
+                        Background
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#skills" class="text-sm font-medium text-zinc-600 transition hover:text-black">
+                        Skills
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#projects" class="text-sm font-medium text-zinc-600 transition hover:text-black">
+                        Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="text-sm font-medium text-zinc-600 transition hover:text-black">
+                        Contact
+                    </a>
+                </li>
             </ul>
+
         </nav>
     </header>
-    <section id="hero">
-        <h1> Charlize Nadela</h1>
-        <a href="https://github.com/charlysss-l" target="_blank"> Charlize Mikaela Nadela - Web Developer</a>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section id="hero"
+        class="mx-auto flex min-h-[calc(100vh-80px)] max-w-7xl items-center px-6 py-20 lg:px-10">
+
+        <div class="max-w-4xl">
+
+            <p class="mb-5 text-sm font-semibold uppercase tracking-[0.2em] text-zinc-500">
+                Full-Stack Web Developer
+            </p>
+
+            <h1 class="text-5xl font-extrabold leading-[0.95] tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
+                Hi, I'm
+                <span class="block">
+                    Charlize Mikaela Nadela
+                </span>
+            </h1>
+
+            <p class="mt-8 max-w-2xl text-base leading-7 text-zinc-600 sm:text-lg">
+                I build responsive and user-focused web applications using
+                React, Node.js, Ruby on Rails, PostgreSQL, JavaScript,
+                and Tailwind CSS.
+            </p>
+
+            <div class="mt-8 flex flex-wrap gap-3">
+
+                <a href="#projects"
+                    class="rounded-md bg-zinc-900 px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-zinc-700">
+                    View Projects
+                </a>
+
+                <a href="https://github.com/charlysss-l"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="rounded-md border border-zinc-300 px-6 py-3 text-sm font-semibold text-zinc-800 transition hover:-translate-y-0.5 hover:border-zinc-900 hover:bg-white">
+                    GitHub
+                </a>
+
+                <a href="#contact"
+                    class="rounded-md border border-zinc-300 px-6 py-3 text-sm font-semibold text-zinc-800 transition hover:-translate-y-0.5 hover:border-zinc-900 hover:bg-white">
+                    Contact Me
+                </a>
+
+            </div>
+
+        </div>
     </section>
-    
-   <section id="background">
-        <h2> Background</h2>
-        
-        <div class="bg-con">
-            <div class="bg-item">
-                <h1>College</h1>
-                <h2>Bachelor of Science in Computer Science</h2>
-                <h2>Cavite State University</h2>
-                <h2>2021 - September 2025</h2>
-            </div>
 
-            <div class="bg-item">
-                <h1>SHS</h1>
-                <h2>Science, Technology, Engineering, and Mathematics</h2>
-                <h2>Technological Institute of the Philippines</h2>
-                <h2>2018 - 2020</h2>
-            </div>
 
-            <div class="bg-item">
-                <h1>Internship</h1>
-                <h2>Full-stack Developer / Technical Support</h2>
-                <h2>FiveTwenty IT Services - Alabang</h2>
-                <h2>July - September 2024</h2>
-            </div>
+    <!-- =========================
+         ABOUT
+    ========================== -->
 
-            <div class="bg-item">
-                <h1>Bootcamp</h1>
-                <h2>Full-stack Developer</h2>
-                <h2>Learn Technology Today</h2>
-                <h2>January 2025 - Current</h2>
-            </div>
-        </div>
-        </div>
-   </section>
+    <section id="about" class="border-t border-zinc-200 bg-white px-6 py-24 lg:px-10">
 
-   <section id="work">
-        <h1> Work Experience</h2>
-        
-        <div class="work-con">
-             <div class="work-item">
-                <h1>Junior Web Developer</h1>
-                <h2>Rockheart PH</h2>
-                <h2>January 2026 - Present</h2>
-                <p> 
-                    Developing and maintaining a full-stack payment gateway platform with secure transaction processing, responsive user interfaces, and backend API integration.
+        <div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[250px_1fr]">
+
+            <div>
+                <p class="text-sm font-semibold uppercase tracking-widest text-zinc-400">
+                    About
                 </p>
-            </div>
-            <div class="work-item">
-                <h1>Operations Customer Expert I</h1>
-                <h2>Teleperformance</h2>
-                <h2>April 2025- October 2025 </h2>
-                <p> 
-                    Responded to customer inquiries via phone, outbound call, and live chat. Documented customer interactions and maintained detailed records in the system
-                </p>
+
+                <h2 class="mt-2 text-4xl font-bold tracking-tight">
+                    About Me
+                </h2>
             </div>
 
-            <div class="work-item">
-                <h1>Technical Support Intern</h1>
-                <h2>FiveTwenty IT Services</h2>
-                <h2> July 2024 - September 2024	 </h2>
-                <p> 
-                   Contributed to the development of two Web-Based Systems. Provided hardware and software technical support to clients. Set up and configured computer networks.
-                </p>
-            </div>
+            <div class="max-w-3xl space-y-5 text-base leading-8 text-zinc-600">
 
-            <div class="work-item">
-                <h1>Social Media Management </h1>
-                <h2>Freelance</h2>
-                <h2> July 2024 - September 2024	 </h2>
-                <p> 
-                  Managed chat support and answered inquiries for property listings. Scheduled Facebook posts and basic ad campaigns to generate leads. Prepared quick client follow-ups to support customer engagement
-                </p>
-            </div>
-
-            <div class="work-item">
-                <h1>Encoder </h1>
-                <h2>Freelance</h2>
-                <h2> February 2021 - February 2025		 </h2>
-                <p> 
-                  Performed accurate data entry for client-provided information. Provided basic remote troubleshooting via Anydesk, TeamViewer, and HelpWire
-                  </p>
-            </div>
-
-
-            <div class="work-item">
-                <h1>Web Developer - Project Based </h1>
-                <h2>Freelance</h2>
-                <h2> September 2021 – October 2025  </h2>
-                <p> 
-                  Designed responsive landing pages focusing on UX and conversion. Built and deployed full-stack websites with admin dashboards and database integration</p>
-            </div>
-
-        </div>
-   </section>
-
-       <section id="skills" class="skills">
-            <div class="SectionTitle">
-                <h2 class="backgroundTitle"> Skills</h2>
                 <p>
-                    THIS SECTION CONTAINS MY SOFTWARE SKILLS AND<br> WEB DESIGN SKILLS
-                    
+                    I’m a Junior Full-Stack Web Developer currently working in the fintech industry, 
+                    where I contribute to the development and maintenance of web applications and payment-related
+                    systems in a production environment. My professional work involves experience working across 
+                    frontend and backend development, API integration, database-driven features, and application testing.
                 </p>
+
+                <p>
+                    Alongside my professional work, I continue to strengthen my full-stack development skills through personal 
+                    projects using React, Node.js, PostgreSQL, and Tailwind CSS. I also take courses and hands-on training to 
+                    expand my technical knowledge, improve my development practices, and stay up to date with modern web technologies.
+                </p>
+
             </div>
 
-            <div class="AllSkills">
-                <div class="skillSetFront">
-                    <h3 class="skillEnd">Frontend Development</h3>
-                    <ul class="skillTitle">
-                    <li class="skillType"><img class="tech-img" src="images/html.png" alt="HTML" />HTML</li>
-                    <li class="skillType"><img class="tech-img" src="images/css.png" alt="CSS" />CSS</li>
-                    <li class="skillType"><img class="tech-img" src="images/javascript.png" alt="JavaScript" />JavaScript</li>
-                    <li class="skillType"><img class="tech-img" src="images/typescript.png" alt="Typescript" />Typescript</li>
-                    <li class="skillType"><img class="tech-img" src="images/react.png" alt="React" />React</li>
-                    <li class="skillType"><img class="tech-img" src="images/scss.png" alt="SCSS" />SCSS</li>
-                    <li class="skillType"><img class="tech-img" src="images/wordpress.png" alt="Wordpress" />WordPress</li>
-                    </ul>
-                </div>
-            
-                <div class="skillSetBackend">
-                <h3 class="skillEnd">Backend Development</h3>
-                <ul class="skillTitle">
-                    <li class="skillType"><img class="tech-img" src="images/nodejs.png" alt="NodeJS" />NodeJS</li>
-                    <li class="skillType"><img class="tech-img" src="images/expressjs.png" alt="ExpressJS" />ExpressJS</li>
-                    <li class="skillType"><img class="tech-img" src="images/php.png" alt="PHP" />PHP</li>
-                </ul>
-                </div>
-        
-                <div class="skillSetDatabase">
-                    <h3 class="skillEnd">Database Management</h3>
-                    <ul class="skillTitle">
-                    <li class="skillType"><img class="tech-img" src="images/mongodb.png" alt="MongoDB" />MongoDB</li>
-                    <li class="skillType"><img class="tech-img" src="images/mysql.png" alt="MySQL" />MySQL</li>
-                    </ul>
-                </div>
-            
-                <div class="skillSetWebDesign">
-                <h3 class="skillEnd">Web Design</h3>
-                <ul class="skillTitle">
-                    <li class="skillType"><img class="tech-img" src="images/photoshop.png" alt="Adobe Photoshop" />Adobe Photoshop</li>
-                    <li class="skillType"><img class="tech-img" src="images/illustrator.png" alt="Adobe Illustrator" />Adobe Illustrator</li>
-                    <li class="skillType"><img class="tech-img" src="images/figma.png" alt="Figma" />Figma</li>
-                    <li class="skillType"><img class="tech-img" src="images/canva.png" alt="Canva" />Canva</li>
-                </ul>
-                </div>
-            
-                <div class="skillSetTools">
-                <h3 class="skillEnd">Tools</h3>
-                <ul class="skillTitle">
-                    <li class="skillType"><img class="tech-img" src="images/git.png" alt="Git" />Git</li>
-                    <li class="skillType"><img class="tech-img" src="images/github.png" alt="GitHub" />GitHub</li>
-                    <li class="skillType"><img class="tech-img" src="images/postman.png" alt="Postman" />Postman</li>
-                </ul>
-                </div>
-            </div>
-        </section>
-    
-    <section id="projects" class="projects-section">
-    <div class="sidebar">
-        <h2>Project List</h2>
-
-        <div class="category">
-            <div class="cat-header" onclick="toggleCategory('frontend')">Frontend ▼</div>
-            <ul class="cat-list" id="frontend-list"></ul>
         </div>
 
-        <div class="category">
-            <div class="cat-header" onclick="toggleCategory('fullstack')">Fullstack ▼</div>
-            <ul class="cat-list" id="fullstack-list"></ul>
-        </div>
-
-        <div class="category">
-            <div class="cat-header" onclick="toggleCategory('wordpress')">WordPress ▼</div>
-            <ul class="cat-list" id="wordpress-list"></ul>
-        </div>
-    </div>
-
-    <div class="projectDisplay" id="projectDisplay">
-        <h2>Project Description</h2>
-        <p>Select a project from the sidebar to see its details.</p>
-    </div>
     </section>
 
 
+    <!-- =========================
+         WORK EXPERIENCE
+    ========================== -->
 
-    <section id="contact" class="contact">
+    <section id="work" class="bg-zinc-950 px-6 py-24 text-white lg:px-10">
 
-        <div class="contactBottom">
-            <h2>Contact Now</h2>
-            <h3>Email: <a href="mailto:ph.charlizemikaelanadela@gmail.com">ph.charlizemikaelanadela@gmail.com</a></h3>
+        <div class="mx-auto max-w-7xl">
 
-            <h4>
-                UI DEVELOPER | UX DEVELOPER
-            </h4>
-             <div class="webdev-buttons">
-                    <a class="githubButton" href="https://github.com/charlysss-l" target="_blank">GitHub</a>
-                    <a class="linkedinButton" href="https://www.linkedin.com/in/charlizenadela-dev/" target="_blank">LinkedIn</a>
+            <div class="mb-12 max-w-2xl">
+
+                <p class="text-sm font-semibold uppercase tracking-widest text-zinc-500">
+                    Experience
+                </p>
+
+                <h2 class="mt-2 text-4xl font-bold tracking-tight sm:text-5xl">
+                    Work Experience
+                </h2>
+
+                <p class="mt-5 leading-7 text-zinc-400">
+                    My professional experience across web development,
+                    technical support, customer operations, and freelance work.
+                </p>
+
+            </div>
+
+
+            <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+
+                <div class="rounded-xl border border-zinc-800 bg-zinc-900 p-7 transition hover:-translate-y-1 hover:border-zinc-700">
+
+                    <p class="text-sm font-medium text-zinc-500">
+                        January 2026 – Present
+                    </p>
+
+                    <h3 class="mt-3 text-xl font-bold text-white">
+                        Junior Web Developer
+                    </h3>
+
+                    <h4 class="mt-1 text-sm font-medium text-zinc-400">
+                        Golden Bell Future Inc. · Fintech
+                    </h4>
+
+                    <p class="mt-5 text-sm leading-7 text-zinc-400">
+                        Contributing to the development and maintenance of a full-stack
+                        fintech payment platform, working across frontend and backend
+                        features using Ruby on Rails, PostgreSQL, JavaScript, and Tailwind CSS.
+                        Develop and integrate APIs, implement database-driven features,
+                        improve application functionality, and write automated tests using RSpec.
+                    </p>
+
+                </div>
+
+                <div class="rounded-xl border border-zinc-800 bg-zinc-900 p-7 transition hover:-translate-y-1 hover:border-zinc-700">
+                    <p class="text-sm text-zinc-500">
+                        April 2025 – October 2025
+                    </p>
+
+                    <h3 class="mt-3 text-xl font-bold">
+                        Operations Customer Expert I
+                    </h3>
+
+                    <h4 class="mt-1 text-sm text-zinc-400">
+                        Teleperformance
+                    </h4>
+
+                    <p class="mt-5 text-sm leading-7 text-zinc-400">
+                        Responded to customer inquiries via phone, outbound calls,
+                        and live chat. Documented customer interactions and
+                        maintained detailed records in the system.
+                    </p>
+                </div>
+
+
+                <div class="rounded-xl border border-zinc-800 bg-zinc-900 p-7 transition hover:-translate-y-1 hover:border-zinc-700">
+                    <p class="text-sm text-zinc-500">
+                        July – September 2024
+                    </p>
+
+                    <h3 class="mt-3 text-xl font-bold">
+                        Technical Support Intern
+                    </h3>
+
+                    <h4 class="mt-1 text-sm text-zinc-400">
+                        FiveTwenty IT Services
+                    </h4>
+
+                    <p class="mt-5 text-sm leading-7 text-zinc-400">
+                        Contributed to the development of two web-based systems.
+                        Provided hardware and software technical support and
+                        configured computer networks.
+                    </p>
+                </div>
+
+
+                <div class="rounded-xl border border-zinc-800 bg-zinc-900 p-7 transition hover:-translate-y-1 hover:border-zinc-700">
+                    <p class="text-sm text-zinc-500">
+                        July – September 2024
+                    </p>
+
+                    <h3 class="mt-3 text-xl font-bold">
+                        Social Media Management
+                    </h3>
+
+                    <h4 class="mt-1 text-sm text-zinc-400">
+                        Freelance
+                    </h4>
+
+                    <p class="mt-5 text-sm leading-7 text-zinc-400">
+                        Managed chat support and property listing inquiries.
+                        Scheduled Facebook posts and basic ad campaigns and
+                        prepared client follow-ups.
+                    </p>
+                </div>
+
+
+                <div class="rounded-xl border border-zinc-800 bg-zinc-900 p-7 transition hover:-translate-y-1 hover:border-zinc-700">
+                    <p class="text-sm text-zinc-500">
+                        February 2021 – February 2025
+                    </p>
+
+                    <h3 class="mt-3 text-xl font-bold">
+                        Encoder
+                    </h3>
+
+                    <h4 class="mt-1 text-sm text-zinc-400">
+                        Freelance
+                    </h4>
+
+                    <p class="mt-5 text-sm leading-7 text-zinc-400">
+                        Performed accurate data entry and provided basic remote
+                        troubleshooting using AnyDesk, TeamViewer, and HelpWire.
+                    </p>
+                </div>
+
+
+                <div class="rounded-xl border border-zinc-800 bg-zinc-900 p-7 transition hover:-translate-y-1 hover:border-zinc-700">
+                    <p class="text-sm text-zinc-500">
+                        September 2021 – October 2025
+                    </p>
+
+                    <h3 class="mt-3 text-xl font-bold">
+                        Web Developer – Project Based
+                    </h3>
+
+                    <h4 class="mt-1 text-sm text-zinc-400">
+                        Freelance
+                    </h4>
+
+                    <p class="mt-5 text-sm leading-7 text-zinc-400">
+                        Designed responsive landing pages focused on UX and
+                        conversion. Built and deployed full-stack websites
+                        with admin dashboards and database integration.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         BACKGROUND
+    ========================== -->
+
+    <section id="background" class="px-6 py-24 lg:px-10">
+
+        <div class="mx-auto max-w-7xl">
+
+            <div class="mb-12">
+                <p class="text-sm font-semibold uppercase tracking-widest text-zinc-400">
+                    Background
+                </p>
+
+                <h2 class="mt-2 text-4xl font-bold tracking-tight">
+                    Education & Training
+                </h2>
+            </div>
+
+            <div class="grid gap-5 md:grid-cols-2">
+
+                <div class="rounded-xl bg-zinc-900 p-7 text-white shadow-lg">
+                    <p class="mb-6 text-sm font-semibold uppercase tracking-widest text-zinc-500">
+                        01
+                    </p>
+
+                    <h3 class="text-2xl font-bold">
+                        College
+                    </h3>
+
+                    <div class="mt-4 space-y-1 text-sm leading-6 text-zinc-300">
+                        <p>Bachelor of Science in Computer Science</p>
+                        <p>Cavite State University</p>
+                        <p class="text-zinc-500">2021 – September 2025</p>
+                    </div>
+                </div>
+
+
+                <div class="rounded-xl bg-zinc-900 p-7 text-white shadow-lg">
+                    <p class="mb-6 text-sm font-semibold uppercase tracking-widest text-zinc-500">
+                        02
+                    </p>
+
+                    <h3 class="text-2xl font-bold">
+                        Senior High School
+                    </h3>
+
+                    <div class="mt-4 space-y-1 text-sm leading-6 text-zinc-300">
+                        <p>Science, Technology, Engineering, and Mathematics</p>
+                        <p>Technological Institute of the Philippines</p>
+                        <p class="text-zinc-500">2018 – 2020</p>
+                    </div>
+                </div>
+
+
+                <div class="rounded-xl bg-zinc-900 p-7 text-white shadow-lg">
+                    <p class="mb-6 text-sm font-semibold uppercase tracking-widest text-zinc-500">
+                        03
+                    </p>
+
+                    <h3 class="text-2xl font-bold">
+                        Internship
+                    </h3>
+
+                    <div class="mt-4 space-y-1 text-sm leading-6 text-zinc-300">
+                        <p>Full-Stack Developer / Technical Support</p>
+                        <p>FiveTwenty IT Services – Alabang</p>
+                        <p class="text-zinc-500">July – September 2024</p>
+                    </div>
+                </div>
+
+
+                <div class="rounded-xl bg-zinc-900 p-7 text-white shadow-lg">
+                    <p class="mb-6 text-sm font-semibold uppercase tracking-widest text-zinc-500">
+                        04
+                    </p>
+
+                    <h3 class="text-2xl font-bold">
+                        Bootcamp
+                    </h3>
+
+                    <div class="mt-4 space-y-1 text-sm leading-6 text-zinc-300">
+                        <p>Full-Stack Developer</p>
+                        <p>Learn Technology Today</p>
+                        <p class="text-zinc-500">January 2025 – Current</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+        SKILLS
+    ========================== -->
+
+    <section id="skills" class="bg-zinc-50 px-6 py-24 lg:px-10">
+
+        <div class="mx-auto max-w-7xl">
+
+            <!-- Section Header -->
+            <div class="mb-12 max-w-2xl">
+
+                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-zinc-400">
+                    Technologies
+                </p>
+
+                <h2 class="mt-2 text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl">
+                    Skills
+                </h2>
+
+                <p class="mt-4 leading-7 text-zinc-600">
+                    Technologies and tools I use for full-stack development,
+                    database management, testing, and web design.
+                </p>
+
+            </div>
+
+            <!-- Skills Grid -->
+            <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+
+                <!-- Frontend -->
+                <div class="rounded-xl border border-zinc-200 bg-white p-7 text-zinc-900 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+
+                    <div class="mb-6">
+                        <p class="text-xs font-semibold uppercase tracking-widest text-zinc-400">
+                            Frontend
+                        </p>
+
+                        <h3 class="mt-1 text-xl font-bold">
+                            Frontend Development
+                        </h3>
+                    </div>
+
+                    <ul class="space-y-4">
+
+                        <li class="flex items-center gap-3">
+                            <img src="images/javascript.png"
+                                alt="JavaScript"
+                                class="h-7 w-7 object-contain">
+                            <span>JavaScript</span>
+                        </li>
+
+                        <li class="flex items-center gap-3">
+                            <img src="images/react.png"
+                                alt="React"
+                                class="h-7 w-7 object-contain">
+                            <span>React</span>
+                        </li>
+
+                        <li class="flex items-center gap-3">
+                            <img src="images/typescript.png"
+                                alt="TypeScript"
+                                class="h-7 w-7 object-contain">
+                            <span>TypeScript</span>
+                        </li>
+
+                        <li class="flex items-center gap-3">
+                            <img src="images/tailwind.png"
+                                alt="Tailwind CSS"
+                                class="h-7 w-7 object-contain">
+                            <span>Tailwind CSS</span>
+                        </li>
+
+                        <li class="flex items-center gap-3">
+                            <img src="images/html.png"
+                                alt="HTML"
+                                class="h-7 w-7 object-contain">
+                            <span>HTML</span>
+                        </li>
+
+                        <li class="flex items-center gap-3">
+                            <img src="images/css.png"
+                                alt="CSS"
+                                class="h-7 w-7 object-contain">
+                            <span>CSS</span>
+                        </li>
+
+                        <li class="flex items-center gap-3">
+                            <img src="images/scss.png"
+                                alt="SCSS"
+                                class="h-7 w-7 object-contain">
+                            <span>SCSS</span>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+                <!-- Backend -->
+                <div class="rounded-xl border border-zinc-200 bg-white p-7 text-zinc-900 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+
+                    <div class="mb-6">
+                        <p class="text-xs font-semibold uppercase tracking-widest text-zinc-400">
+                            Backend
+                        </p>
+
+                        <h3 class="mt-1 text-xl font-bold">
+                            Backend Development
+                        </h3>
+                    </div>
+
+                    <ul class="space-y-4">
+
+                        <li class="flex items-center gap-3">
+                            <img src="images/ruby.png"
+                                alt="Ruby on Rails"
+                                class="h-7 w-7 object-contain">
+                            <span>Ruby on Rails</span>
+                        </li>
+
+                        <li class="flex items-center gap-3">
+                            <img src="images/nodejs.png"
+                                alt="Node.js"
+                                class="h-7 w-7 object-contain">
+                            <span>Node.js</span>
+                        </li>
+
+                        <li class="flex items-center gap-3">
+                            <img src="images/expressjs.png"
+                                alt="Express.js"
+                                class="h-7 w-7 object-contain">
+                            <span>Express.js</span>
+                        </li>
+
+                        <li class="flex items-center gap-3">
+                            <img src="images/php.png"
+                                alt="PHP"
+                                class="h-7 w-7 object-contain">
+                            <span>PHP</span>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+                <!-- Database & Testing -->
+                <div class="rounded-xl border border-zinc-200 bg-white p-7 text-zinc-900 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+
+                    <div class="mb-6">
+                        <p class="text-xs font-semibold uppercase tracking-widest text-zinc-400">
+                            Data & Quality
+                        </p>
+
+                        <h3 class="mt-1 text-xl font-bold">
+                            Database & Testing
+                        </h3>
+                    </div>
+
+                    <ul class="space-y-4">
+
+                        <li class="flex items-center gap-3">
+                            <img src="images/postgresql.png"
+                                alt="PostgreSQL"
+                                class="h-7 w-7 object-contain">
+                            <span>PostgreSQL</span>
+                        </li>
+
+                        <li class="flex items-center gap-3">
+                            <img src="images/mongodb.png"
+                                alt="MongoDB"
+                                class="h-7 w-7 object-contain">
+                            <span>MongoDB</span>
+                        </li>
+
+                        <li class="flex items-center gap-3">
+                            <img src="images/mysql.png"
+                                alt="MySQL"
+                                class="h-7 w-7 object-contain">
+                            <span>MySQL</span>
+                        </li>
+
+                        <li class="flex items-center gap-3">
+                            <img src="images/rspec.png"
+                                alt="Rspec"
+                                class="h-7 w-7 object-contain">
+                            <span>RSpec</span>
+                        </li>
+
+                        <li class="flex items-center gap-3">
+                            <img src="images/vitest.png"
+                                alt="Vitest"
+                                class="h-7 w-7 object-contain">
+                            <span>Vitest</span>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+                <!-- Tools -->
+                <div class="rounded-xl border border-zinc-200 bg-white p-7 text-zinc-900 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+
+                    <div class="mb-6">
+                        <p class="text-xs font-semibold uppercase tracking-widest text-zinc-400">
+                            Workflow
+                        </p>
+
+                        <h3 class="mt-1 text-xl font-bold">
+                            Tools
+                        </h3>
+                    </div>
+
+                    <ul class="space-y-4">
+
+                        <li class="flex items-center gap-3">
+                            <img src="images/git.png"
+                                alt="Git"
+                                class="h-7 w-7 object-contain">
+                            <span>Git</span>
+                        </li>
+
+                        <li class="flex items-center gap-3">
+                            <img src="images/github.png"
+                                alt="GitHub"
+                                class="h-7 w-7 object-contain">
+                            <span>GitHub</span>
+                        </li>
+
+                        <li class="flex items-center gap-3">
+                            <img src="images/postman.png"
+                                alt="Postman"
+                                class="h-7 w-7 object-contain">
+                            <span>Postman</span>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+                <!-- Web Design -->
+                <div class="rounded-xl border border-zinc-200 bg-white p-7 text-zinc-900 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+
+                    <div class="mb-6">
+                        <p class="text-xs font-semibold uppercase tracking-widest text-zinc-400">
+                            Design
+                        </p>
+
+                        <h3 class="mt-1 text-xl font-bold">
+                            Web Design
+                        </h3>
+                    </div>
+
+                    <ul class="space-y-4">
+
+                        <li class="flex items-center gap-3">
+                            <img src="images/figma.png"
+                                alt="Figma"
+                                class="h-7 w-7 object-contain">
+                            <span>Figma</span>
+                        </li>
+
+                        <li class="flex items-center gap-3">
+                            <img src="images/photoshop.png"
+                                alt="Adobe Photoshop"
+                                class="h-7 w-7 object-contain">
+                            <span>Adobe Photoshop</span>
+                        </li>
+
+                        <li class="flex items-center gap-3">
+                            <img src="images/illustrator.png"
+                                alt="Adobe Illustrator"
+                                class="h-7 w-7 object-contain">
+                            <span>Adobe Illustrator</span>
+                        </li>
+
+                        <li class="flex items-center gap-3">
+                            <img src="images/canva.png"
+                                alt="Canva"
+                                class="h-7 w-7 object-contain">
+                            <span>Canva</span>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- CMS & Platforms -->
+                <div class="rounded-xl border border-zinc-200 bg-white p-7 text-zinc-900 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+
+                    <div class="mb-6">
+                        <p class="text-xs font-semibold uppercase tracking-widest text-zinc-400">
+                            CMS
+                        </p>
+
+                        <h3 class="mt-1 text-xl font-bold">
+                            Platforms
+                        </h3>
+                    </div>
+
+                    <ul class="space-y-4">
+
+                        <li class="flex items-center gap-3">
+                            <img src="images/wordpress.png"
+                                alt="WordPress"
+                                class="h-7 w-7 object-contain">
+                            <span>WordPress</span>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
         </div>
-        </section>
+
+    </section>
+
+    <!-- =========================
+        PROJECTS
+    ========================== -->
+
+    <section id="projects" class="bg-zinc-50 px-4 py-24 sm:px-6 lg:px-8">
+
+        <div class="mx-auto max-w-[1600px]">
+
+            <!-- Section Header -->
+            <div class="mb-12 max-w-3xl">
+
+                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-zinc-400">
+                    Selected Work
+                </p>
+
+                <h2 class="mt-2 text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl lg:text-6xl">
+                    Projects
+                </h2>
+
+                <p class="mt-4 text-base leading-7 text-zinc-600 sm:text-lg">
+                    A selection of web applications and websites I've built
+                    using frontend, full-stack, and WordPress technologies.
+                </p>
+
+            </div>
 
 
-        <div id="lightbox" class="lightbox">
-            <span class="close" onclick="closeLightbox()">&times;</span>
-            <img class="lightbox-img" id="lightbox-img" src="" alt="Project Image">
+            <!-- Project Explorer -->
+            <div class="grid min-h-[750px] overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-950 shadow-xl lg:grid-cols-[320px_1fr]">
+
+
+                <!-- SIDEBAR -->
+
+                <aside class="border-b border-zinc-800 bg-zinc-950 p-6 lg:border-b-0 lg:border-r">
+
+                    <div class="mb-8 px-2">
+
+                        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-600">
+                            Portfolio
+                        </p>
+
+                        <h3 class="mt-1 text-xl font-bold text-white">
+                            Project List
+                        </h3>
+
+                    </div>
+
+
+                    <!-- Frontend -->
+
+                    <div class="category">
+
+                        <button
+                            type="button"
+                            class="cat-header flex w-full items-center justify-between rounded-lg border border-zinc-800 bg-zinc-900 px-4 py-4 text-sm font-semibold text-white transition hover:border-zinc-700 hover:bg-zinc-800"
+                            onclick="toggleCategory('frontend')">
+
+                            <span>Frontend</span>
+
+                            <span class="text-xs text-zinc-500">
+                                ▼
+                            </span>
+
+                        </button>
+
+                        <ul
+                            id="frontend-list"
+                            class="cat-list mt-2 hidden space-y-1 pl-2">
+                        </ul>
+
+                    </div>
+
+
+                    <!-- Full-Stack -->
+
+                    <div class="category mt-3">
+
+                        <button
+                            type="button"
+                            class="cat-header flex w-full items-center justify-between rounded-lg border border-zinc-800 bg-zinc-900 px-4 py-4 text-sm font-semibold text-white transition hover:border-zinc-700 hover:bg-zinc-800"
+                            onclick="toggleCategory('fullstack')">
+
+                            <span>Full-Stack</span>
+
+                            <span class="text-xs text-zinc-500">
+                                ▼
+                            </span>
+
+                        </button>
+
+                        <ul
+                            id="fullstack-list"
+                            class="cat-list mt-2 hidden space-y-1 pl-2">
+                        </ul>
+
+                    </div>
+
+
+                    <!-- WordPress -->
+
+                    <div class="category mt-3">
+
+                        <button
+                            type="button"
+                            class="cat-header flex w-full items-center justify-between rounded-lg border border-zinc-800 bg-zinc-900 px-4 py-4 text-sm font-semibold text-white transition hover:border-zinc-700 hover:bg-zinc-800"
+                            onclick="toggleCategory('wordpress')">
+
+                            <span>WordPress</span>
+
+                            <span class="text-xs text-zinc-500">
+                                ▼
+                            </span>
+
+                        </button>
+
+                        <ul
+                            id="wordpress-list"
+                            class="cat-list mt-2 hidden space-y-1 pl-2">
+                        </ul>
+
+                    </div>
+
+                </aside>
+
+
+                <!-- PROJECT DISPLAY -->
+
+                <main
+                    id="projectDisplay"
+                    class="projectDisplay min-h-[750px] overflow-y-auto bg-white p-8 sm:p-10 lg:p-14 xl:p-16">
+
+                    <div class="flex min-h-[600px] flex-col justify-center">
+
+                        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-zinc-400">
+                            Project Details
+                        </p>
+
+                        <h2 class="mt-4 text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl">
+                            Explore My Work
+                        </h2>
+
+                        <p class="mt-5 max-w-2xl text-base leading-8 text-zinc-500 sm:text-lg">
+                            Select a project from the sidebar to view its
+                            description, technologies, screenshots, and
+                            project links.
+                        </p>
+
+                        <div class="mt-8 flex flex-wrap gap-2">
+
+                            <span class="rounded-full bg-zinc-100 px-4 py-2 text-xs font-medium text-zinc-600">
+                                Frontend
+                            </span>
+
+                            <span class="rounded-full bg-zinc-100 px-4 py-2 text-xs font-medium text-zinc-600">
+                                Full-Stack
+                            </span>
+
+                            <span class="rounded-full bg-zinc-100 px-4 py-2 text-xs font-medium text-zinc-600">
+                                WordPress
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </main>
+
+            </div>
+
         </div>
-<script src="projects.js"></script>
+
+    </section>
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section id="contact" class="border-t border-zinc-200 bg-white px-6 py-24 text-center">
+
+        <div class="mx-auto max-w-3xl">
+
+            <p class="text-sm font-semibold uppercase tracking-widest text-zinc-400">
+                Get In Touch
+            </p>
+
+            <h2 class="mt-2 text-4xl font-bold tracking-tight sm:text-5xl">
+                Let's Work Together
+            </h2>
+
+            <p class="mt-5 text-zinc-600">
+                Interested in working together or discussing a project?
+                Feel free to reach out.
+            </p>
+
+            <p class="mt-6">
+                <a
+                    href="mailto:ph.charlizemikaelanadela@gmail.com"
+                    class="font-medium text-zinc-900 underline underline-offset-4 hover:text-zinc-500">
+                    ph.charlizemikaelanadela@gmail.com
+                </a>
+            </p>
+
+            <p class="mt-6 text-sm font-semibold tracking-widest text-zinc-400">
+                UI DEVELOPER · UX DEVELOPER
+            </p>
+
+
+            <div class="mt-8 flex flex-wrap justify-center gap-3">
+
+                <a
+                    class="rounded-md bg-zinc-900 px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-zinc-700"
+                    href="https://github.com/charlysss-l"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    GitHub
+                </a>
+
+                <a
+                    class="rounded-md bg-[#0077b5] px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:opacity-90"
+                    href="https://www.linkedin.com/in/charlizenadela-dev/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         LIGHTBOX
+    ========================== -->
+
+    <div
+        id="lightbox"
+        class="lightbox fixed inset-0 z-50 hidden items-center justify-center bg-black/90">
+
+        <button
+            class="close absolute right-6 top-4 text-4xl font-bold text-white"
+            onclick="closeLightbox()">
+            &times;
+        </button>
+
+        <img
+            class="lightbox-img max-h-[90vh] max-w-[90vw] rounded-lg"
+            id="lightbox-img"
+            src=""
+            alt="Project Image">
+
+    </div>
+
+
+    <script src="projects.js"></script>
 
 </body>
 </html>
